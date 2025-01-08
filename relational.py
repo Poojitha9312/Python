@@ -1,0 +1,12 @@
+x=20
+y=30
+a=(x<y)
+print(a)
+b=(x>=y)
+print(b)
+c=(x==y)
+print(c)
+d=(x<=y)
+print(d)
+e=(x!=y)
+print(e)
