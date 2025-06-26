@@ -1,185 +1,259 @@
-# # # set is an collection of unordered elements which is iterable and mutable...set elements cannot be accessed
-# # # by using index becuase they are unordered...set use curly braces{}...
-# # # ex: s={}
-# # # s={1,2,3,4,5}
+# set datastructure is just like list but it cant hold duplicate items...
+# set is an unorder collection which means it doesn't maintain order..
+# In set we cant apply indexing and slicing concept
+# set is mutable in nature and we can do modifications on set...
+# but the set elements is immutable in nature..
+# if we want to store unique elements (not duplicate) then we use the set...
+# {} is used to create a set.....
 
-# # s={}
-# # print(type(s))
+# creation of empty set:
+s={}
+print(s)
 
-# # s1={1,2,3,4,5}
-# # print(type(s1))
+print(type(s))
+# Note: if we create a empty set it will taken as dictionary...
 
-# # # set elements can be accessed by using for loop:
-# # s={1,2,3,4,5}
-# # for i in s:
-# #     print(i)
+# In another way we can create a empty set by using set function:
+s=set()
+print(s)
+print(type(s))
 
-# # s=set()
-# # print(s)
-# # print(type(s)) 
+# creation of set with multiple items:
+s={10,20,(1,2),50}
+print(s)
+print(type(s))
+# here we cant store list,set,dict elements it will hold only tuple elements
 
-# # # creation of set with mutliple elements:
-# # s={1,2,3,4,(5,6),7,8}
-# # print(s)
-# # print(type(s))
+# creation of set with different data items:
+s={10,"pooji",True,7.8,(1,7)}
+print(s)
+print(type(s))
 
+# creation of set from list:
+l=[10,20,"pooji",True,9.0,50]
+s=set(l)
+print(s)
+print(type(s))
 
-# # s={1,2,3,(4,5),6,7,8}
-# # for i in s:
-# #     print(i,end="")
-# #     print(type(s))
+# creation of set from range:
+s=set(range(12))
+print(s)
+print(type(s))
 
-# # # creation of set with hetrogeneous elements:
-# # s1={20,"poojitha",85.6,True}
-# # print(s1)
-# # print(type(s1))
+# creation of set using eval()function:
+s=eval(input("Enter your set:"))
+print(s)
+print(type(s))
 
-# # creation of list elemts in to set elements:
-# # l=[1,2,3,4,5]
-# # s=set(l)
-# # print(l)
-# # print(type(l))
-# # print(s)
-# # print(type(s))
+# creation of set using tuple:
+t=(10,20,"snehi",8.2,50)
+s=set(t)
+print(s)
+print(type(s))
 
-# # print(type(l))
-#  # creation of set from range:
-# # s=set(range(1,11))
-# # print(s)
+# creation of set from string:
+a="rama  krishna"
+s=set(a)
+print(s)
+print(type(s))
 
-# # creation of set from string:
-# # name="Rama Lakshmi"
-# # s=set(name)
-# # print(name)
-# # print(type(name))
-# # print(s)
-# # print(type(s))
+# Accessing elements in set:
+# Accessing elements in set through indexing and slicing is not possible 
+# because set doen't follow order
+# By using membership operator we know that element is present or not(in,not in)
+s={10,20,"snehi",5.2}
+print(s)
+print("snehi" in s)
+print(70 in s)
 
-# # creation of set from tuple:
-# # t=(1,2,3,4,5)
-# # s=set(t)
-# # print(t)
-# # print(type(t))
-# # print(s)
-# # print(type(s))
-# # membership operator in set:
-# # s={1,2,3,4,5,6}
-# # print(5 in s)
-# # print(6 not in s)
-# # print(9 not in s)
+# set Methods:
+# add,update,remove,clear,copy,pop,enumerate,sort,max,min,length,discard
 
-# # Accessin elements by using iteration for loop:
-# # s={1,2,3,4,5,6,7,8,9}
-# # for i in s:
-# #     print(i,end="")
+# 1.Add method:
+# It used to add element on set
+# If the added element is already present in a set it wont'be reflect and not raising any error
+s={10,20,30,"snehi",False,8.0}
+print(s)
+s.add(35)
+print(s)
+s.add(10)
+print(s)
 
-
-# # methods in set:
-# # 1. Add method()
-# # s={1,2,3,4,5,6}
-# # print(s.add(7))
-# # print(s)
-# # print(s.add(-2))
-# # print(s)
-# # print(s.add("snehi"))
-# # print(s)
-
-# # s={10,20,30,40}
-# # t=(1,2.3)
-# # print(s.add(t))
-# # print(s)
-# # print(type(s))
-
-# # s={1,2,3,}# we cannot add list to set because it is immutable
-# # l=[6,7,8]
-# # print(s.add(l))
-# # print(s)
-
-# # 2.pop method(): # first element can be removed from set
-# # s={1,2,3,4,5,6}
-# # print(s.pop())
-# # print(s)
-
-# # # 3. remove method():
-# # s={10,20,30,40,50,60}
-# # print(s.remove(20))
-# # print(s)
-
-# # 4. Discard method():
-# # discard method removes the element from set and it does not gives any error if we given
-# # an element not there in list
-# # s={1,2,3,4,5}
-# # print(s.discard(1))
-# # print(s)
-# # print(s.discard(7))
-# # print(s)
-
-# # 5. clear method():It removes all elements in set
-# # s={1,2,3,4,5}
-# # print(s.clear())
-# # print(s)
-
-
-# # 6.copy method(): it copies elements from one set to another set
-# # s={10,20,30,40}
-# # a=s.copy()
-# # print(a)
-
-# # 7.union method: It combines the two sets 
-# # s1={"red", "pink","skyblue"}
-# # s2={"black","orange"}
-# # print(s1.union(s2))
-
-# # # 8.update method(): it will update .before set
-# # s1={1,2,3,4,5}
-# # s2={6,7,8}
-# # print(s1.union(s2))
-# # print(s1)
-# # print(s1.update(s2))
-# # print(s1)
-
-# # 9.difference method(): It returns only s1 elements not s2 elements and common elements
-# # s1={1,2,3,4,5}
-# # s2={4,5,6,7,8}
-# # print(s1.difference(s2))
-
-# # # 10. symmetric difference method(): It returns s1 and s2 elements not common elements
-# # s1={10,20,30,40,50}
-# # s2={40,50,60,70,80}
-# # print(s1.symmetric_difference(s2))
-
-# # 11. superset and subset:
-# s1={1,2,3,4,5,6,7,8}
-# s2={3,4,5}
-# print(s1.issuperset(s2))
-# print(s2.issubset(s1))
-# print(s2.issuperset(s1))
-# print(s1.issubset(s2))
-
-# # 12. Isdisjiont:
-# s1={1,2,3,4,5}
-# s2={3,4}
-# print(s1.isdisjoint(s2))
-
-# s1={1,2,3,4,5}
-# s2={6,7,8}
-# print(s1.isdisjoint(s2))
-
-# s={"pooji"}
-# s={ i[0] for i in s}
+# 2.update Method:
+# It is used to add multiple elements in the set
+# here we will add iterable objects like list,tuple,ramge,dict 
+# but not individually...
+s={10,20,30,"pooji"}
+print(s)
+# s.update(100,200)# type error: 'int' object is not iterable
 # print(s)
+s.update((100,200))
+print(s)
 
-#frozenset: frozenset is same as set but it is immutable, thats why we cannot perform modifying operations
-s1={1,2,3,4,5}
-fs=frozenset(s1)
+s={10,20,"snehi",4.7}
+print(s)
+l=[1,2,3]
+t=(50,60)
+s.update(l,t,range(10))
+print(s)
+
+# 3.Remove Method:
+# It is used to remove specified element from the set..
+# If the element is not present in the set it will raise an keyerror....
+s={5,10,15,60,False}
+print(s)
+s.remove(10)
+print(s)
+s.remove(20)# if the element is not present it will raise an keyerror.
+print(s)
+
+# 4.discard Method:
+# discard is also similar to remove method only but if the element is not
+# present in the set it wont raise any key error..
+s={1,2,56,47,25}
+print(s)
+s.discard(47)
+print(s)
+s.discard(100)
+print(s)
+
+# 5.clear Method:
+# It is used to clear all elements in the set but not set.....
+s={10,20,30}
+print(s)
+s.clear()
+print(s)
+
+# 6.copy Method:
+# It is used to copy set from another set
+s={10,20,30,89,70}
+v=s.copy()
+print(v)
+print(id(s))
+print(id(v))
+
+# 7.pop Method:
+# It is used to remove randomly any element from set...
+s={10,45,"ruchi",False}
+print(s)
+s.pop()
+print(s)
+s.pop()
+print(s)
+
+# 8.Enumerate method:
+# It is used to return the index value and the value
+s={1,2,3,True,"senhi"}
+for i in enumerate(s):
+    print(i)
+
+# 9.sum Method:
+s={10,20,5}
+print(sum(s))
+
+# 10.Length Method:
+s={10,20,30}
+print(len(s))
+
+# Min Method:
+s={1,3,5,7,75}
+print(min(s))
+
+# Max method:
+s={15,25,48,79,97}
+print(max(s))
+
+# sort Method:
+# It is used to print either in ascending order or descending order
+s={21,35,65,82,1,4,7}
+v=sorted(s)
+print(v)
+
+s={1,2,7,21,35,78,97}
+l=sorted(s,reverse=True)
+print(l)
+
+# union method:
+# it is used to return all the elements present in the set
+s1={23,33,43,53,63,71,91}
+s2={15,20,25,43,53,65}
+print(s1.union(s2))
+print(s1|s2)
+
+# Intersection Method:
+# it is used to returns the common elements present in the both sets..
+s1={10,15,20,25,30,35}
+s2={1,2,3,15,20,72}
+print(s1.intersection(s2))
+print(s1&s2)
+
+# difference method:
+# it is used to return s1 elements not s2 not common elements
+s1={1,2,3,4,5,6,7,8}
+s2={3,4,5,15,25}
+print(s1.difference(s2))
+print(s1-s2)
+
+# symmetric difference:
+# it is used to return all elemnets in s1 and s2 but not common elements..
+s1={10,20,30,40}
+s2={10,50,60}
+print(s1.symmetric_difference(s2))
+print(s1^s2)
+
+
+# subset and superset:
+a={1,2,3,4,5,6,7,8}
+b={2,3,4}
+print(b.issubset(a))
+print(a.issuperset(b))
+
+#set comprehension:
+#If you want to create a set from iterable objects like list,tuple,range,dict etc
+#By writing very less code in efficient way then we can go for set comprehensions.
+s=set()
+for i in range(10):
+    s.add(i)
+print(s)
+
+# by using set comprehension:
+s={i for i in range(10)}
+print(s)
+
+
+# Frozenset:
+# Frozenset is similar to set datastructure but the small difference is there ,
+# where the set is mutable and frozenset is immutable...so that we cant perform modification operations
+s={23,33,43,53,63}
+fs=frozenset(s)
 print(fs)
 print(type(fs))
 
-# In frozenset we cannot add or remove:
-s1={1,2,3,4,5}
-fs=frozenset(s1)
+# frozenset is immutable in nature we cant use remove and add
+s={23,43,53,63}
+fs=frozenset(s)
 print(fs)
-print(fs.add(20))
-print(fs)
-print(fs.remove(1))
-print(fs)
+print(type(fs))
+fs.add(26)
+fs.remove(52)
+
+# merging set elements:
+s1={10,20,30}
+s2={10,20}
+s3=s1+s2
+print(s3)
+
+
+
+
+
+
+
+# while loop:
+
+s={1,2,56,47,25}
+s1=list(s)
+i=0
+while i<len(s1):
+    print(s1[i])
+    i=i+1
