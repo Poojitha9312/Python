@@ -1,7 +1,8 @@
-y="poojitha"
-i=0
-while i<len(y):
-    print(y[i])
-    i=i+1
-    if y[i]=='t':
-        break
+class student:
+    class_var = "I am a class variable"
+    
+    def method(self):
+        print("This is a method.")
+
+# Accessing the __dict__ attribute of the class
+print(student.__dict__)
