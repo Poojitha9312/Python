@@ -48,8 +48,9 @@ while i<len(x):    # len(x)=2- (0,1), len(y)=2(0,1)
 
 for i in range(1,11):
     for j in range(2,4) :
-        print(i*j, end=" ")
+        print(i*j,end=" ")
     print()
+  
    
 
 
