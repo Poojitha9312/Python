@@ -10,7 +10,7 @@ for i in range(n):
 n=5
 for i in range(n):
     for j in range(i+1):
-        print(i,end=" ")
+        print("*",end=" ")
     print()
 
 
@@ -25,7 +25,7 @@ for i in range(n):
 # high-low:
 n=5
 for i in range(n):
-    for j in range(i,n):
+    for j in range(i+1):
         print("*",end=" ")
     print()
 

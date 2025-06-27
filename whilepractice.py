@@ -60,7 +60,8 @@ y="poojitha"
 i=0
 while i<len(y):
     print(y[i])
-    if y[i]=='h':
-        break
     i=i+1
+    if y[i]=='t':
+        break
+
 

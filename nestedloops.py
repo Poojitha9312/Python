@@ -34,6 +34,7 @@ while i<=3:
         print("seetha")
         j=j+1
     i=i+1
+    
 
 x=[1,2]
 y=[4,5]
