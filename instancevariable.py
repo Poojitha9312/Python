@@ -110,6 +110,8 @@ print(s1.__dict__)
 s1.name="vasu"
 print(s1.__dict__)
 
+# -------------------ACCESSING OF INSTANCE VARIABLE-----------------
+
 
 # Accessing the instance variable inside the constructor...
 class student:
@@ -141,6 +143,7 @@ p1=Person("Ram",30)
 print(f"my name is {p1.name} and my age is {p1.age}")
 print(p1.__dict__)
 
+# --------------DELETION OF INSTANCE VARIABLES-------------------
 # 3. Deletion of instance variable....
 #Example 1: Delete the instance variable inside the Constructor
 class Person:
