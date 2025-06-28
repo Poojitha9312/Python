@@ -92,3 +92,42 @@ print(student.__dict__)
 
 
 #-----------------ACCESSING THE STATIC VARIABLE--------------------------
+# 1. Accessing the static variable outside the class...
+class student:
+    college_name="pragati college" # here it is a static variable
+print(student.college_name)
+
+# 2.Accessing the static variable inside the constuctor.....
+class student:
+    college_name="sri chaitanya" # static variable
+    def __init__(self):
+        print(student.college_name)
+s1=student()
+
+# 3. Accessing the static variable inside the instance method...
+class student:
+    college_name="sri chaitanya"
+    def sample(self):
+        print(student.college_name)
+
+s1=student()
+print(student.college_name)
+
+# 4.Accessing the static variable inside the class method....
+class student:
+    school_name="hamsavahini"
+    @ classmethod
+    def sample(cls):
+        print(student.school_name)
+
+student.sample()
+
+# 5. Accessing the static variable inside the static method....
+class student:
+    college_name="sri chaitanya"
+    @staticmethod
+    def sample():
+        print(student.college_name)
+student.sample()
+
+#------------------MODIFYING STATIC VARIABLES------------------------
