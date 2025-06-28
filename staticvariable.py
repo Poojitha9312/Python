@@ -131,3 +131,32 @@ class student:
 student.sample()
 
 #------------------MODIFYING STATIC VARIABLES------------------------
+# 1.modify the static variable outside the class...
+class student:
+    college_name="pragati college"
+print(student.college_name)
+student.college_name="geetham college"
+print(student.college_name)
+
+# 2.Modifying the static variable inside the class and constuctor...
+class student:
+    school_name="little woods"
+    def __init__(self):
+        student.school_name="sri chaitanya"
+print(student.school_name)
+s1=student()
+print(student.school_name)
+
+
+# 3. Modifying the static variable inside the class and inside the instance method.......
+class student:
+    college_name="sri chaitanya"
+    def sample(self):
+        student.college_name="Aditya college"
+print(student.college_name)
+s1=student()
+s1.sample()
+print(student.college_name)
+
+
+#---------------------DELETION OF STATIC VARIABLE-----------------------

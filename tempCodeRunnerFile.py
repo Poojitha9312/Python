@@ -1,6 +1,8 @@
 class student:
     college_name="sri chaitanya"
-    @staticmethod
-    def sample():
-        print(student.college_name)
-student.sample()
+    def sample(self):
+        student.college_name="Aditya college"
+print(student.college_name)
+s1=student()
+s1.sample()
+print(student.college_name)
