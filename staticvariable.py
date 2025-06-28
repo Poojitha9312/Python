@@ -160,3 +160,13 @@ print(student.college_name)
 
 
 #---------------------DELETION OF STATIC VARIABLE-----------------------
+# 1.Deletion of static variable outside the class
+class student:
+    school_name="pargati"
+print(student.school_name)
+print(student.__dict__)
+del student.school_name
+print(student.__dict__)
+
+# 2.Deletion of static variable inside the class......
+class student:
