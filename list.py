@@ -8,7 +8,7 @@ l=[]
 print(l)
 
 # creation of list:
-l=[10,20,"poojitha",8.2,"snehitha"]
+l=[10,20,"poojitha",8.2,"snehitha",True]
 print(l)
 
 # list function():
