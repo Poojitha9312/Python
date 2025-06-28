@@ -21,7 +21,7 @@ class student:
 
 print(student.school_name)    #We can call directly by class
 s1=student()
-print(s1.school_name) #We can call by object as well
+print(s1.school_name) # We can call by object as well
 print(student.__dict__)  # verify the static variable is class level object
 print(s1.__dict__)   #Static variable is not object level 
 
@@ -35,6 +35,7 @@ print(student.__dict__)
 
 s1.school_name="Sri Chaintanya"
 print(student.__dict__)
+
 
 #Example 3: Creation of static variable inside the constructor
 class student:
@@ -53,6 +54,7 @@ class student:
 s1=student()
 s1.Details()
 print(student.__dict__)
+print(s1.__dict)
 
 
 #Example 5: Creation of static variable inside the class method by using class name
