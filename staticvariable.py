@@ -170,3 +170,48 @@ print(student.__dict__)
 
 # 2.Deletion of static variable inside the class......
 class student:
+    college_name="aditya"
+    del college_name
+print(student.__dict__)
+
+# 3.Deletion of static variable inside the class and inside the constuctor...
+class student:
+    school_name="hamsavahini"
+    def __init__(self):
+        del  student.school_name
+
+print(student.__dict__)
+s1=student()
+print(student.__dict__)
+
+
+# 4.Deletion of static variable inside the class and inside the instance method...
+class student:
+    college_name="pragati"
+    def sample(self):
+        del student.college_name
+print(student.__dict__)
+s1=student()
+s1.sample()
+print(student.__dict__)
+
+# 5.Deletion of static variable inside the class and inside  the class method..
+class student:
+    school_name="Aditya"
+    @classmethod
+    def sample(cls):
+        del student.school_name
+print(student.__dict__)
+student.sample()
+print(student.__dict__)
+
+# 6.Deletion of static variable inside the class and inside static method..
+class student:
+    college_name="Narayana"
+    @staticmethod
+    def sample():
+        del student.college_name
+print(student.__dict__)
+student.sample()
+print(student.__dict__)
+
