@@ -120,6 +120,12 @@ for i in range(3,6):
    print(l.insert(i,ele))
    print(l)
 
+
+
+
+
+   
+
 # write a program to print the list elements in reverse order:
 l=[10,20,30,40,50]
 n=len(l)-1
