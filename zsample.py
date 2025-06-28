@@ -1,10 +1,10 @@
-class Person:
-    school_name="Sri Chaitanya"
+for i in range(1,7):
+    if i==4:
+        pass
+    print("hai")
+   
         
-print(Person.__dict__)
-
-del Person.school_name
-print(Person.__dict__)
+  
    
 
 

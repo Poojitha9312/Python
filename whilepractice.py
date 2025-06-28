@@ -50,7 +50,7 @@ i= int(input(" Enter i value :"))
 while i<10:
     print(i)
     i=i+1
-    if i==9:
+    if i==5:
         break
 else:
     print(" while loop is exhausted")

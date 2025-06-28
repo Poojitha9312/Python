@@ -31,5 +31,5 @@ def hide_char():
     for i in name:
         if i=='a':
             continue
-        print(i,end='')
+        print(i)
 hide_char()
