@@ -32,9 +32,10 @@ class student:
         print(f" my principal name is {cls.school_principalname}")
 
 student.cm()
+s1=student()
+s1.sample()
 
-#output:
-My schoolname is Aditya and my 
+
 
 
 
