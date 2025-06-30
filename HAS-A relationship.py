@@ -1,2 +1,6 @@
 # Relationship is used to access the members of one class inside another class..
 # The advantage of relationship is code-reusability....
+# HAS-A relationship(also known as composition)
+# IS-A relationship(Inheritance)
+# In HAS-A relationship we will build object from smaller objects...
+
