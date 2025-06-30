@@ -15,7 +15,7 @@ for i in range(1,7):
 # It is uesd to skip the part of specific iteration
 # syntax:  continue
 for i in range(1,7):
-    if i==4:
+    if i==5:
         continue
     print(i)
 

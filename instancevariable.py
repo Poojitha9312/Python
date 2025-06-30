@@ -30,7 +30,7 @@ class student:
         self.name=name
         self.age=age
 h1=student()
-print(h1.sample("lakshmi",30))
+(h1.sample("lakshmi",30))
 print(h1.__dict__)
 h2=student()
 print(h2.sample("punarvi",15))
@@ -132,6 +132,7 @@ class Person:
         print(f"My name is {self.name} and my age is {self.age}")
 p1=Person("Ram",30)
 p1.detials()
+print(p1.__dict__)
 
 
 #Example 3:Accessing the instance variable outside the class 
