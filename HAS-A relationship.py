@@ -15,4 +15,9 @@
 # Ex: College is complex object and departments are smaller objects.
 
 # Here without College(Container Object) there are no departments(Contained objects).
-
+class car:
+    def __init__(self,cname,ccolour,cprice):
+        self.cname=cname
+        self.ccolour=ccolour
+        self.cprice=cprice
+    def 
