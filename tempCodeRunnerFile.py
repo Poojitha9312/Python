@@ -1,8 +1,8 @@
-class student:
-    pass
-s1=student()
-student.school_name="Sri Chaitanya" #static variable
-print(student.__dict__)
-#here we can create with object also
-s1.school_name="Sri Chaintanya"
-print(student.__dict__)
+l=[10,20,30,40,50,10,60,10,70]
+print(" printing the original list")
+for i in l:
+    print(i,end=" ")
+l.remove(20)
+print(" printing the list after removal of 20 element")
+for i in l:
+    print(i,end="  ")
