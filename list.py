@@ -56,7 +56,7 @@ print(l)
 print(l[::])
 print(l[0:4])
 print(l[-1])
-print(l[-3:])
+print(l[-1:-5])
 print(l[-5:])
 
 

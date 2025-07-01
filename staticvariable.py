@@ -32,7 +32,7 @@ class student:
 s1=student()
 student.school_name="Sri Chaitanya" #static variable
 print(student.__dict__)
-#here we can create with object also
+# #here we can create with object also
 s1.school_name="Sri Chaintanya"
 print(student.__dict__)
 
@@ -109,7 +109,7 @@ s1=student()
 class student:
     college_name="sri chaitanya"
     def sample(self):
-        print(student.college_name)
+        student.college_name
 
 s1=student()
 print(student.college_name)
@@ -173,7 +173,8 @@ print(student.__dict__)
 # 2.Deletion of static variable inside the class......
 class student:
     college_name="aditya"
-    del college_name
+    school_name="aditya"
+    del school_name
 print(student.__dict__)
 
 # 3.Deletion of static variable inside the class and inside the constuctor...
