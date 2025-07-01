@@ -131,6 +131,7 @@ class student:
         print(student.college_name)
 student.sample()
 
+
 #------------------MODIFYING STATIC VARIABLES------------------------
 # 1.modify the static variable outside the class...
 class student:
