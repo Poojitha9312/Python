@@ -87,7 +87,7 @@ class student:
     def static_method():  #here for static method 1st variable is nothing
         student.school_name="Sri Chaitanya" #static variable
         
-#Here in this case no need to create object we directly call class methods with class name reference.
+#Here in this case no need to create object we directly call static methods with class name reference.
 student.static_method()
 print(student.__dict__)
 
