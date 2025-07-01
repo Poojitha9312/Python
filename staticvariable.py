@@ -46,6 +46,7 @@ s1=student()
 print(student.__dict__)
 
 
+
 #Example 4: Creation of static variable inside the Instance method
 class student:
     def Details(self):
@@ -54,7 +55,7 @@ class student:
 s1=student()
 s1.Details()
 print(student.__dict__)
-print(s1.__dict)
+print(s1.__dict__)
 
 
 #Example 5: Creation of static variable inside the class method by using class name

@@ -1,4 +1,8 @@
 class student:
-    school_name="hamsavahini" #static variable
+    def Details(self):
+        student.school_name="Sri Chaitanya" #static variable
 
-print(student.school_name)  
+s1=student()
+s1.Details()
+print(student.__dict__)
+print(s1.__dict)
