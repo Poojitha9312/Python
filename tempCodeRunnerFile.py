@@ -5,4 +5,4 @@ class student:
 s1=student()
 s1.Details()
 print(student.__dict__)
-print(s1.__dict)
+print(s1.__dict__)

@@ -55,7 +55,7 @@ class student:
 s1=student()
 s1.Details()
 print(student.__dict__)
-print(s1.__dict__)
+
 
 
 #Example 5: Creation of static variable inside the class method by using class name
