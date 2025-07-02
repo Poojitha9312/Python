@@ -55,6 +55,7 @@ class student:
 s1=student()
 s1.Details()
 print(student.__dict__)
+print(student.school_name)
 
 
 
@@ -109,10 +110,11 @@ s1=student()
 class student:
     college_name="sri chaitanya"
     def sample(self):
-        student.college_name
+        print(student.college_name)
 
 s1=student()
-print(student.college_name)
+s1.sample()
+# print(student.college_name)
 
 # 4.Accessing the static variable inside the class method....
 class student:

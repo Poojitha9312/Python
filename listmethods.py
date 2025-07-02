@@ -47,6 +47,7 @@ l=[10,20,"snehitha","poojitha",4.2,10,10,30,40,40,40,50]
 print(l)
 print(l.count(30))
 print(l.count(40))
+print(l.count(10))
 
 
 # we want to count multiple values go for for iteration:
