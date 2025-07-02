@@ -9,8 +9,8 @@ class Student:
 
 class Staff:
     @classmethod
-    def modify_student(cls, student_obj):  # class method
-        student_obj.age = 31
+    def modify_student(cls, x):  # class method
+        x.age = 31
         print("Student age modified by class method in Staff")
 
 s1 = Student("Ram", 30)
