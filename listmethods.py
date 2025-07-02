@@ -189,8 +189,6 @@ print(l)
 
 
 
-
-
 # 10. clear(It is used to clear all the elements in the list)
 l=[10,20,30,40,50]
 l.clear()
