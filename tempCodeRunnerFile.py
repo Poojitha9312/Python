@@ -1,23 +1,22 @@
-class Test:
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
-        
-    def access(self):
-        print(f"The value of a is {self.a} and the value of b is {self.b}")
-    
-    def update(self,x,y):
-        self.a=x
-        self.b=y
+class  student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def sample(self):
+        print(f"My name is {self.name}")
+        print(f"My age is {self.age}")
 
-    def delete(self):
-        del self.a
+names=["kavya","priya","divya","ramya","punarvi","praneetha"]
+age=[15,16,17,18,19,20]
 
-        
-t1=Test(10,20)
-print(t1.__dict__)
-t1.access()
-t1.update(30,40)
-t1.access()
-t1.delete()
-print(t1.__dict__)
+obj_list=[]
+for i in range(len(names)):
+    s1=student(names[i],age[i])
+    obj_list.append(s1)
+
+print(obj_list)
+print(obj_list[0].name)
+print(obj_list[0].age)
+
+print(obj_list[1].name)
+print(obj_list[1].age)
