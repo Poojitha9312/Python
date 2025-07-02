@@ -1,8 +1,8 @@
 #Passing one class members to another class using Instance method............
 
 class student:
-    def __init__(self,n,age,address,rollno):
-        self.name=n
+    def __init__(self,name,age,address,rollno):
+        self.name=name
         self.age=age
         self.address=address
         self.rollno=rollno
