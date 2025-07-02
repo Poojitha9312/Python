@@ -66,3 +66,17 @@ for i in range(len(names)):
     print(obj_list[i].name)
     print(obj_list[i].age)
     print(30*'=')
+
+# Example 4
+#Creation of Mutiple Objects By using Multi Elements single list and for Method 
+class student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def sample(self):
+        print(f"My name is {self.name}")
+        print(f"My age is {self.age}")
+        print(30*'=')
+s1=[student("aparna",15),student("kavya",20)]
+for student in s1:
+    student.sample()
