@@ -1,20 +1,11 @@
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+class calculator:
+    @staticmethod
+    def add(a=10,b=20):
+        print(f"Addition result is {a+b}")
         
-    def Details(self):
-        print(f'Name is {self.name}')
-        print(f'Age is {self.age}')
-
-class Staff:
-    @classmethod
-    def modify_student(cls, x):  # class method
-        x.age = 31
-        print("Student age modified by class method in Staff")
-
-s1 = Student("Ram", 30)
-s1.Details()
-
-Staff.modify_student(s1)  # class method can be called from class
-s1.Details()
+    def sub(a,b):
+        print(f"Subtraction result is {a-b}")
+        
+calculator.add() #calling static method using class name
+c1=calculator()
+c1.add()
