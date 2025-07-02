@@ -15,8 +15,16 @@ for i in range(len(names)):
     obj_list.append(s1)
 
 print(obj_list)
-print(obj_list[0].name)
-print(obj_list[0].age)
+print(30*'=')
+# print(obj_list[0].name)
+# print(obj_list[0].age)
 
-print(obj_list[1].name)
-print(obj_list[1].age)
+# print(obj_list[1].name)
+# print(obj_list[1].age)
+
+# upto 5 we have to given like this instead of that method we can use this below method.....
+
+for i in range(len(names)):
+    print(obj_list[i].name)
+    print(obj_list[i].age)
+    print(30*'=')
