@@ -5,8 +5,8 @@ class calculator:
         b=20
         result=a+b
         print(f"Addition result is {a+b}")
-    @staticmethod
-    def sub(a,b):
+    # @staticmethod
+    def sub():
         a=10
         b=20
         result=a-b
