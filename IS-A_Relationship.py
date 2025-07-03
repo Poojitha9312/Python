@@ -103,6 +103,28 @@ b.Details()
 # x is 10
 # y is 20
 
+#Example: Without Inheritance
+class A:
+    def __init__(self):
+        self.x=10
+        self.y=20
+        
+class B:
+    def __init__(self):  #Here without Inheritance code usabilty is repeated
+        self.x=10
+        self.y=20
+    def Details(self):
+        print(f'x is {self.x}')
+        print(f'y is {self.y}')
+        
+b=B()
+b.Details()
+
+'''
+x is 10
+y is 20
+'''
+
 
 
         
