@@ -85,6 +85,21 @@ b1.m2()
 b1.m1()#here it will works becuse we apply inheritance...
 # B is the child class to parent class A.....
 
+
+# Example 3:
+class x:
+    def __init__(self):
+        self.a=10
+        self.b=30
+
+class y(x):
+    def sample(self):
+        print(f"My name is {self.a}")
+        print(f"My age is {self.b}")
+y1=y()
+y1.sample
+
+
         
         
    
