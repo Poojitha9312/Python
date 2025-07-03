@@ -46,36 +46,3 @@ b.method3()
 b.method1() #Here B object has no attribute 'method1'
 
 #Example:
-class A:
-    def method1(self):
-        print("A class Method1")
-    def method2(self):
-        print("A class method2")
-class B(A):    #Here B extends a
-    def method3(self):
-        print("B class method3")
-
-b=B()
-b.method3()
-b.method1() #Here it works
-
-'''
-B class method3
-A class Method1
-'''
-
-#Example:
-class A:
-    def __init__(self):
-        self.x=10
-        self.y=20
-        
-class B(A):
-    def Details(self):
-        print(f'x is {self.x}')
-        print(f'y is {self.y}')
-b=B()
-b.Details()
-
-# x is 10
-# y is 20
