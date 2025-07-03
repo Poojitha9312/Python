@@ -1,9 +1,10 @@
 #------------INHERITANCE--------------
 #1. IS-A Relationship / Inheritance
-'''
-Inheritance is a mechanism for creating a new class from an existing class.
-Here the old class is called Base class and the new class is called Derived class.
-'''
+
+# Inheritance is a mechanism for creating a new class from an existing class.
+# Here the old class is called Base class and the new class is called Derived class.
+# if we will create a new class from an old class then we can easily access the members of a old class...
+
 
 #Example:
 '''
