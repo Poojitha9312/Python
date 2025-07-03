@@ -1,6 +1,6 @@
 class x:
     def __init__(self):
-        self.a=10
+        self.a=20
         self.b=30
 
 class y(x):
