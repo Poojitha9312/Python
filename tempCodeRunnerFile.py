@@ -7,9 +7,14 @@ class A:
     def m2(self):
         self.z=30
         print(self.z)
-class B(A):
-    pass
+class B:
+    def m3(self):
+        self.k=50
+        print(self.k)
+    
+a1=A()
+a1.m3()
 
 b1=B()
-b1.m2()
 b1.m1()
+b1.m3()
