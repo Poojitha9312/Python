@@ -1,11 +1,15 @@
-class x:
-    def __init__(self):
-        self.a=20
-        self.b=30
+class A:
+    def m1(self):
+        self.x=10
+        self.y=20
+        print(self.x)
+        print(self.y)
+    def m2(self):
+        self.z=30
+        print(self.z)
+class B(A):
+    pass
 
-class y(x):
-    def sample(self):
-        print(f"My name is {self.a}")
-        print(f"My age is {self.b}")
-y1=y()
-y1.sample
+b1=B()
+b1.m2()
+b1.m1()
