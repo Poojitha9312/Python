@@ -86,6 +86,7 @@ b1.m1()#here it will works because we apply inheritance...
 # # B is the child class to parent class A.....
 
 
+
 # Example 3:
 class A:
     def __init__(self):

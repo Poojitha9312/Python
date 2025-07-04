@@ -35,7 +35,7 @@ class A:
     def m2(self):
         self.z=30
         print(self.z)
-class B:
+class B(A):
     def m3(self):
         self.k=50
         print(self.k)
