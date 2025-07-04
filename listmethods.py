@@ -135,6 +135,10 @@ print(l)
 
 # 7.Extend(): extend means expand
 # It is used to add all the elements of the list to another list
+l1=[1,2,3]
+l2=[10,20,30]
+l1.extend(l2)
+print(l1)
 
 
 
@@ -184,9 +188,9 @@ print(l)
 
 
 # if list contains the string values also:
-# l=[1,3,5,2,"snehitha","poojitha"]
-# l.sort()
-# print(l)
+l=[1,3,5,2,"snehitha","poojitha"]
+l.sort()
+print(l)
 
 
 
@@ -198,6 +202,8 @@ print(l)
  # 11.del:
 # It is used to delete the  specific elements in the list by using index value
 l=[5,15,25,35,45]
+print(l)
+del l[2]
 print(l)
 del l
 print(l)
@@ -222,7 +228,7 @@ print(p)
 print(l)
 
 # note: if we assign (means equal one list to another list)  if we made any changes it will reflect both
-# l=[10,20,30,40,50]
+l=[10,20,30,40,50]
 v=l
 print(l)
 print(v)
