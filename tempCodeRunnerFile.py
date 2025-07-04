@@ -1,4 +1,5 @@
-l1=[1,2,3]
-l2=[10,20,30]
-l1.extend(l2)
-print(l1)
+l=[2,4,3,1,5,8,7]
+# i=0
+for i in l:
+    l.sort()
+print(l)
