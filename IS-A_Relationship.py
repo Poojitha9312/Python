@@ -32,57 +32,57 @@ In the above
 '''
 
 #Example:
-# class A:
-#     def method1(self):
-#         print("A class Method1")
-#     def method2(self):
-#         print("A class method2")
-# class B:
-#     def method3(self):
-#         print("B class method3")
+class A:
+    def method1(self):
+        print("A class Method1")
+    def method2(self):
+        print("A class method2")
+class B:
+    def method3(self):
+        print("B class method3")
 
-# b=B()
-# b.method3()
-# b.method1() #Here B object has no attribute 'method1'
+b=B()
+b.method3()
+b.method1() #Here B object has no attribute 'method1'
 
 # #Example:
 # class A:
-#     def m1(self):
-#         x="ram"
-#         print(x)
-#     def m2(self):
-#         y="ruchi"
-#         print(y)
-#     def m3(self):
-#         z="kaveri"
-# class B:
-#     def sample(self):
-#         a=20
-#         b=10
-#         print(a+b)
-# b1=B()
-# b1.sample()
-# b1.m2()# here it doesn't work it will raise attribute error
+def m1(self):
+    x="ram"
+    print(x)
+    def m2(self):
+        y="ruchi"
+        print(y)
+    def m3(self):
+        z="kaveri"
+class B:
+    def sample(self):
+        a=20
+        b=10
+        print(a+b)
+b1=B()
+b1.sample()
+b1.m2()# here it doesn't work it will raise attribute error
 
 # #Example 2:
-# class A:
-#     def m1(self):
-#         x="ram"
-#         print(x)
-#     def m2(self):
-#         y="ruchi"
-#         print(y)
-#     def m3(self):
-#         z="kaveri"
-# class B(A):
-#     def sample(self):
-#         a=20
-#         b=10
-#         print(a+b)
-# b1=B()
-# b1.sample()
-# b1.m2()
-# b1.m1()#here it will works becuse we apply inheritance...
+class A:
+    def m1(self):
+        x="ram"
+        print(x)
+    def m2(self):
+        y="ruchi"
+        print(y)
+    def m3(self):
+        z="kaveri"
+class B(A):
+    def sample(self):
+        a=20
+        b=10
+        print(a+b)
+b1=B()
+b1.sample()
+b1.m2()
+b1.m1()#here it will works becuse we apply inheritance...
 # # B is the child class to parent class A.....
 
 
