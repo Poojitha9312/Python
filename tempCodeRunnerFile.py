@@ -1,15 +1,12 @@
-class A:
-    def m1(self):
-        self.x=10
-        self.y=20
-        print(self.x)
-        print(self.y)
-    def m2(self):
-        self.z=30
-        print(self.z)
-class B(A):
-    pass
+class person:
+    def __init__(self,sal):
+        self.sal=sal
+    def __add__(self,other):
+        return self.sal+other.bonus
+class employee:
+    def __init__(self,bonus):
+        self.bonus=bonus
 
-b1=B()
-b1.m2()
-b1.m1()
+p1=person(20000)
+e1=employee(5000)
+print(p1+e1)
