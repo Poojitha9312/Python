@@ -12,9 +12,7 @@ class child(parent):
 c1=child()
 c1.sample()
 
-
 # example for method overriding
-
 class parent:
     def sample(self):
         print("I like fruits")
