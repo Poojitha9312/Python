@@ -54,3 +54,16 @@ e1=employee(40000)
 p1=person(45000)
 print(e1<p1)
 
+'''
+Common operator methods to overload:
+__add__(self, other) for +
+__sub__(self, other) for -
+__mul__(self, other) for *
+__truediv__(self, other) for /
+__eq__(self, other) for ==
+__lt__(self, other) for <
+__le__(self, other) for <=
+__gt__(self, other) for >
+__ge__(self, other) for >=
+__ne__(self, other) for !=
+'''
