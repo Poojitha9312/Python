@@ -45,3 +45,28 @@ s1.sample(10)
 s1.sample(10,20,30)
 s1.sample(120,130,140,150,160)
 
+
+#Method Overloading using multipledispatch module 
+from multipledispatch import dispatch
+class Test:
+    @dispatch(int,int)
+    def add(a,b):
+        print(a+b)
+    
+    @dispatch(float,float)
+    def add(a,b):
+        print(a+b)
+    
+    @dispatch(int,float)
+    def add(a,b):
+        print(a+b)
+    
+    @dispatch(int,int,int)
+    def add(a,b,c):
+        print(a+b+c)
+        
+t=Test()
+t.add(10,20)
+t.add(40,13.4)
+t.add(10,20,30)
+
