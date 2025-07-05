@@ -36,3 +36,12 @@ s1.method1(10,20,30)
 
 # Example 2:
 #How to archieve method overloading in python by using variable length arguments.
+
+class student:
+    def sample(self,*a):
+        print(a)
+s1=student()
+s1.sample(10)
+s1.sample(10,20,30)
+s1.sample(120,130,140,150,160)
+
