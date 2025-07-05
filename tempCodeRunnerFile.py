@@ -1,9 +1,4 @@
-class parent:
-    def sample(self):
-        print("I like fruits")
-    
-class child(parent):
-    def sample(self):
-        print("I like Ice cream and pizza")# Method overriding
-c1=child()
-c1.sample()
+t1=(10,20,30,50)
+t2=(10,20,30,40)
+print(t1==t2)
+print(t2<t1)

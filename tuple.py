@@ -63,9 +63,7 @@ print(t[-1:0:-3])
 
 
 # # creation of tuple elements using eval() function:
-t=eval(input(" enter the tuple elements:"))
-print(t)
-print(type(t))
+
 
 
 # creation of tuple using range function:
