@@ -3,6 +3,9 @@
 # There are three types of access modifiers in python...
 # They are:
 # 1.public
+# public means anyone can access at anywhere
 # 2.private
+# private means within the class.....
 # 3.protected
+# protected means we can access within the class and we can also access in the child class also...
 
