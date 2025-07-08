@@ -25,7 +25,7 @@ print(type(s))
 # here we cant store list,set,dict elements it will hold only tuple elements
 
 # creation of set with different data items:
-s={10,"pooji",True,7.8,(1,7)}
+s={10,1,"pooji",True,7.8,(1,7)}
 print(s)
 print(type(s))
 
