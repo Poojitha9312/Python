@@ -1,3 +1,5 @@
-s={10,"pooji",True,7.8,(1,7)}
-print(s)
-print(type(s))
+
+s={1,2,7,21,35,78,97}
+l=sorted(s,reverse=True)
+print(l)
+print(type(l))

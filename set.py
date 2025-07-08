@@ -81,7 +81,7 @@ print(s)
 
 # 2.update Method:
 # It is used to add multiple elements in the set
-# here we will add iterable objects like list,tuple,ramge,dict 
+# here we will add iterable objects like list,tuple,range,dict 
 # but not individually...
 s={10,20,30,"pooji"}
 print(s)
@@ -168,10 +168,11 @@ print(max(s))
 s={21,35,65,82,1,4,7}
 v=sorted(s)
 print(v)
-
+print(type(v))
 s={1,2,7,21,35,78,97}
 l=sorted(s,reverse=True)
 print(l)
+print(type(l))
 
 # union method:
 # it is used to return all the elements present in the set
