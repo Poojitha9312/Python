@@ -1,5 +1,6 @@
-
-s={1,2,7,21,35,78,97}
-l=sorted(s,reverse=True)
-print(l)
-print(type(l))
+s={23,43,53,63}
+fs=frozenset(s)
+print(fs)
+print(type(fs))
+fs.add(26)
+fs.remove(52)
