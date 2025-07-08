@@ -95,3 +95,5 @@ class Employee(Human):
         
 e=Employee("Ram",30,"IT","Wipro")
 e.details()
+s1=Student("divya",22,"BSC","PRAGATI")
+s1.details()
