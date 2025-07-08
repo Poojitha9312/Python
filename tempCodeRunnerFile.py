@@ -1,4 +1,7 @@
-t1=(10,20,30,50)
-t2=(10,20,30,40)
-print(t1==t2)
-print(t2<t1)
+class College:
+    def __init__(self):
+        self.__balance=50000
+    def getbalance(self):
+        return self.__balance
+c=College()
+print(c.getbalance())
