@@ -41,26 +41,3 @@ print(s.tell())
 print(s.read())
 s.close()
 
-#Using with statement
-'''In Python, it's a good practice to use the with statement when working with files. This ensures that the file is properly closed after its block is executed, even if an exception occurs.'''
-
-#Example: Using with to read a file
-# Using 'with' ensures the file is automatically closed
-with open('example.txt', 'r') as file:
-    content = file.read()
-    print(content)
-    
-#Example: Using with to write to a file
-with open('example.txt', 'w') as file:
-    file.write("This is written using the 'with' statement.\n")
-    file.write("It will automatically close the file when done.")
-
-#Checking if a File Exists
-#You might want to check if a file exists before opening it. You can use the os module for this:
-import os
-
-if os.path.exists('example.txt'):
-    with open('example.txt', 'r') as file:
-        print(file.read())
-else:
-    print("The file does not exist.")
