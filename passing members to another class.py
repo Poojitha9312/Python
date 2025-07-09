@@ -54,12 +54,14 @@ class Staff:
     @classmethod
     def modify_student(cls, x):  # class method
         x.age = 31
+        # x.name="harini"
+
         print("Student age modified by class method in Staff")
 
 s1 = Student("Ram", 30)
 s1.Details()
 
-Staff.modify_student(s1)  # class method can be called from class
+Staff.modify_student(s1.age)  # class method can be called from class
 s1.Details()
 
 ###Here we are passing only one object from one class to another class using class method
@@ -114,7 +116,7 @@ class Student:
 class Staff:
     @staticmethod
     def modify_age(x): 
-        print(x) 
+        x=31
 
 s1=Student("Ram",30)
 Staff.modify_age(s1.age)  #Here s1 has two objects but we are taking only age in to x.

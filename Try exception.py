@@ -128,6 +128,7 @@ try:
     print(l[6])
 except Exception as e:
     print(e)
+    print("hai")
 
 #Example: customised Exception message
 l=[10,20,30]

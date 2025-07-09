@@ -47,7 +47,6 @@ print(d)
 # creation of empty dict using dict:
 d=dict()
 print(d)
-
 print(type(d))
 
 # Accessing the dict elements by using dict key:
@@ -69,8 +68,6 @@ print(d)
 
 # create a dict dynamically:
 d={}
-
-
 while True:
     key=input("Enter the Key :")
     value=input("Enter the value :")
@@ -141,8 +138,8 @@ for i in d.items():
 d={1:"ram",2:"snehi",3:"ruchi"}
 print(d)
 print(d.pop(1))
-# print(d)
-# print(d.pop())
+print(d)
+print(d.pop())
 print(d.pop(5))
 
 #popitem Method:
