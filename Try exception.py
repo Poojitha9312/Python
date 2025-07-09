@@ -354,13 +354,3 @@ Output:
 ModuleNotFoundError: No module named 'pyqt5'
 '''
 
-#OverFlowError
-import math
-print(math.factorial(64521354534534546))
-'''
-Output:
-OverflowError: factorial() argument should not exceed 2147483647
-'''
-
-#IndentationError (We cannot handle it)
-#It is a type of syntaxerror
