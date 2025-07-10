@@ -27,8 +27,8 @@ v=p1+e1
 class person:
     def __init__(self,sal):
         self.sal=sal
-    def __add__(self,other):
-        return self.sal+other.bonus
+    def __add__(self,x):
+        return self.sal+x.bonus
 class employee:
     def __init__(self,bonus):
         self.bonus=bonus

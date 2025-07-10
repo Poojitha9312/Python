@@ -33,14 +33,14 @@ class Whale:
     def swim(self):
         print("Whale is Swimming")
 
-# def search(x):
-#     x.swim()
-#     x.fly()
+def search(x):
+    x.swim()
+    x.fly()
     
-# d=Duck()
-# w=Whale()
-# search(d)
-# search(w)
+d=Duck()
+w=Whale()
+search(d)
+search(w)
         
 for i in [Duck(),Whale()]:
     i.swim()

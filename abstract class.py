@@ -72,7 +72,7 @@ class Dog(Animal):
     def sound(self):
         print("Woof! Woof!")
         
-# animal = Animal()  # This will raise an error because Animal is abstract
+#  animal = Animal()  # This will raise an error because Animal is abstract
 dog = Dog()
 dog.sound()
 dog.sleep() 
