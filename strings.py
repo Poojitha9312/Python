@@ -46,6 +46,7 @@ print(s1.isalpha())
 
 s1="welcome python"
 print(s1.isalpha())
+
 # here it returns false becuase spaces are given in string
 
 s1="Welcomepython"
