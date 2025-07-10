@@ -6,18 +6,6 @@ print(a)
 print(type(a)) ##we can use '' or "" or ''' ''' or """ """
 # in python strings are immutable.....
 
-# doc string is used to print the comments inside the function:
-def sample():
-    """ The above
-    line gives s1 data"""
-    
-    s1="hello world"
-    return s1
-
-print(sample.__doc__)   
-print(sample())
-
-
 #Accessing The elements of a string
 #We can access elements of a string by using 1.Index 2.Slice Operator
 
