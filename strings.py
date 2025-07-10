@@ -3,7 +3,7 @@
 a="hietechsolutions"
 print(a)
 
-print(type(a)) ##we can use '' or "" or ''' ''' or """ """
+print(type(a)) #we can use '' or "" or ''' ''' or """ """
 # in python strings are immutable.....
 
 #Accessing The elements of a string
