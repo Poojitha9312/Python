@@ -131,8 +131,6 @@ print(s.title())
 s="hai python"
 print(s.capitalize())
 
-# to find length and count of the occurrence:
-
 # Length:
 s="WELCOME TO PYTHON"
 print(len(s))
@@ -173,8 +171,8 @@ print(s1.strip())
 #Fill Method
 s1="Rama"
 print(s1.zfill(6))
-  #Here zfill is 8 and s1 is 4 then 8-4=4 it gives 4 zeros
-  # output:0000Rama
+  #Here zfill is 6 and s1 is 4 then 6-4=2 it gives 2 zeros
+  # output:00Rama
 
 #rjust method
 s1="Rama"
@@ -182,14 +180,14 @@ print(s1.rjust(8))
 #Here rjust is 8 and s1 is 4 then 8-4=4 it gives 4 spaces moves the s1 to right
 
 s1="Rama"
-print(s1.rjust(8, "*")) # ****Rama
+print(s1.rjust(7, "*")) # ****Rama
 
 s1="Rama"
-print(s1.ljust(8, "*"))  # Rama****
+print(s1.ljust(7, "*"))  # Rama****
 
 #Center Method
 s1="Rama"
-print(s1.center(8,"*"))
+print(s1.center(7,"*"))
 
 s1="Rama"
 print(s1.center(12,"*"))# ****Rama****
