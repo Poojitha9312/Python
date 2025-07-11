@@ -98,7 +98,7 @@ add(10,20)
 
 
 # call by value and call by reference:
-# If we made any chages on called function it will not reflect on outside the function when we call with value.
+# If we made any changes on called function it will not reflect on outside the function when we call with value.
 def sample(a):
     print("inside the function before modification",a)
     print("inside the function before modification",id(a))
@@ -113,7 +113,7 @@ print("outside the function after modification",a)
 print("outside the function after calling",id(a))
 
 # call by reference:-
-'''If we made any chages on called function it will reflect on outside the function when we call with reference.'''
+'''If we made any changes on called function it will reflect on outside the function when we call with reference.'''
 def sample(a):
     print(" inside the function before modification",a)
     print("inside the function before modification",id(a))

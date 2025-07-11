@@ -33,7 +33,7 @@ print(a._x) #we are accessing protected outside of the class
 
 #Ex: Accessing Methods
 class A:
-    def _m1(self): #public method
+    def _m1(self): #protected method
         print("m1 method")
     
     def test(self):
