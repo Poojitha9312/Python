@@ -49,7 +49,7 @@ add(10,20)
 #         print("Odd")
         
 # Even_Odd(10)
-# Even_Odd(13)3
+# Even_Odd(13)
 
 # # Types of Functions:
 # # There are two types of functions:
