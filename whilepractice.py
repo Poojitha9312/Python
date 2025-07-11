@@ -45,6 +45,7 @@ while i<10:
     i=i+1
 print(" The sum of N natural numbers is :", sum)
 
+
 # using else with while loop:
 i= int(input(" Enter i value :"))
 while i<10:
