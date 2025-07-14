@@ -159,7 +159,6 @@ sample()
 #Python function can return multiple values.
 def sample(a,b,c):
     return a,b,c
-
 print(sample(10,20,30))
 
 
@@ -192,11 +191,11 @@ def snehi(name,age,school_name):
 snehi("snehitha",15,"hamsavahini")
 
 # Example:
-def my_fun(name,age,place):
+def sample(name,age,place):
     print("My name is:",name)
     print("My age is:",age)
     print("My place is:",place)
-my_fun("ram",age=29,"kkd")# positional argument follows keyword argument
+sample("ram",age=29,"kkd")# positional argument follows keyword argument
 
 
 # Example:

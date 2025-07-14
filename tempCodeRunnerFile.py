@@ -1,6 +1,5 @@
-adj=["red","big","tasty"]
-fruits=["apple","goa","cherry"]
-for x in adj:
-    for y in fruits:
-        print(x,y)
-    print()
+def snehi(name,age,school_name):
+    print("My name is:",name)
+    print("My age is:",age)
+    print("My school_name is :",school_name)
+snehi("snehitha",15,"hamsavahini")
