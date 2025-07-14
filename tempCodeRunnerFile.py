@@ -1,10 +1,4 @@
-class College:
-    def __init__(self):
-        self.__balance=50000
-    def getbalance(self,password):
-        if password==2025:
-            return self.__balance
-        else:
-            return "You are not authorised user"
-c=College()
-print(c.getbalance(2025))
+a="snehitha"
+n=len(a)
+for i in range(0,n,2):
+    print(a[i])
