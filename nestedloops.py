@@ -53,7 +53,6 @@ for i in range(1,11):
   
    
 
-
 adj=["red","big","tasty"]
 fruits=["apple","goa","cherry"]
 for x in adj:
