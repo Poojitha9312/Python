@@ -1,5 +1,5 @@
 # for-loop:
-# for loop executes the set of statements with repeat to every elemnet of the string/ collection object
+# for loop executes the set of statements with repeat to every element of the string/ collection object
 x=[10,20,30,40]
 print(x)
 

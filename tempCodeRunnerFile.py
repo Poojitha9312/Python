@@ -1,19 +1,10 @@
-class A:
+class College:
     def __init__(self):
-        self._x=100 #protected attribute
-    
-    def test(self):
-        print(self._x) #we are accessing protected attributes with in the class
-
-class B(A):
-    def test1(self):
-        print(self._x) #we are accessing protected attributes with in the child class
-
-a=A()
-a.test()
-
-b=B()
-b.test1()
-
-a=A() 
-print(a._x)
+        self.__balance=50000
+    def getbalance(self,password):
+        if password==2025:
+            return self.__balance
+        else:
+            return "You are not authorised user"
+c=College()
+print(c.getbalance(2025))
