@@ -127,7 +127,8 @@ sample(a)
 print("outside the function after modification",a)
 print("outside the function after calling",id(a))
 
-'''Python does not support Call by value or Call by reference it support by call by object reference. When we pass immutable objects like int,float, tuple it acts like call by value (i.e., modify that object and create new object.) and when we pass mutable objects like list, dictionary it acts like call by reference (i.e., modify that object and will not create new object.).'''
+'''Py# these are not in correct position
+thon does not support Call by value or Call by reference it support by call by object reference. When we pass immutable objects like int,float, tuple it acts like call by value (i.e., modify that object and create new object.) and when we pass mutable objects like list, dictionary it acts like call by reference (i.e., modify that object and will not create new object.).'''
 
 ##### return vs print
 '''In functions internally return a value by default as None'''
@@ -179,8 +180,7 @@ sample(10,20)# arguments should match with arguments in the definition of functi
 # Example:
 def my_fun(a,b):
     print ("Name is:",a, "My age is :",b)
-my_fun(30,"Ram")# these are not in correct position
-
+my_fun(30,"Ram")
 # 2.keyword Arguments:
 'Python allows us to call the function with the keyword arguments. This kind of function call will enable us to pass the arguments in the random order.'''
 # Example:
@@ -228,7 +228,6 @@ However, at the function definition, we have to define  *variable-name .
 #Example:
 def variableargs(a):
 	print(a)
-	
 variableargs(10)
 
 #Example:
