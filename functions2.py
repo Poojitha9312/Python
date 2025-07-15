@@ -363,16 +363,6 @@ def fun(num):
 
 fun(5)
 
-#WAP to print sum of natural numbers
-'''
-15
-'''
-def sum_of_n_numbers(n):
-    if n<=1:
-        return n
-    else:
-        return n+sum_of_n_numbers(n-1)    
-print(sum_of_n_numbers(5))
 
 # lamda function:
 # lamda function is a called small anonymous function...

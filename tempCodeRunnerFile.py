@@ -1,5 +1,7 @@
-n=5
-for i in range(n):
-    for j in range(n):
-        print("*",end=" ")
-    print()
+def outer_fun():
+    print("hai")
+    def inner_fun():
+        print("how are you")
+    return inner_fun
+x=outer_fun()
+x()
