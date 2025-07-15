@@ -341,8 +341,8 @@ sample()
 '''
 def fun(num):
     print('*'*num)
-    if num==5:
-        return
+    # if num==5:
+    #     return
     fun(num+1)
 
 fun(1)
@@ -357,8 +357,8 @@ fun(1)
 '''
 def fun(num):
     print('*'*num)
-    if num==1:
-        return
+    # if num==1:
+    #     return
     fun(num-1)
 
 fun(5)
@@ -372,8 +372,9 @@ fun(5)
 # we are using lamda keyword...
 # The main function of lamda is for onetime use...
 #Example:
-x=lambda a,b,c:a+b
+x=lambda a,b,c:a+b+c
 print(x(1,8,3))
+
 
 print((lambda a,b:a+b)(10,20)) #we can write in one line also
 
