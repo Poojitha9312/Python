@@ -394,8 +394,6 @@ print(z(10,20)) # it works Because it is one expression with in one entity tuple
 #Where we exactly use lambda function?
 '''Sometime as a programmer we have to pass function as an argument to another function, at that particular time we can go for lambda function. These functions mainly used in filter(), map(), reduce().'''
 
-print(type(r))
-
 # import function:
 # In python we can import and export the data.
 def add(a,b):
