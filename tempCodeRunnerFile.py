@@ -1,6 +1,5 @@
-a,b=0,1  
-n = int(input("Enter n value:"))
-
-while b < n:
-    print(a)
-    a,b=b,a+b
+n=5
+for i in range(n):
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
