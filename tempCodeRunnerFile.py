@@ -1,6 +1,7 @@
-for letter in "python":
-               if letter=="t":
-                   pass
-               print("This is pass block")
-               print ("Current Letter :", letter)
-               print( "Good bye!")
+n=5
+for i in range(n):
+    for j in range(i+1):
+        print(" ", end=" ")
+    for j in range(i,n):
+        print("*",end=" ")
+    print() 
