@@ -43,6 +43,7 @@ Multiple objects can point to the same class.
 # creating class:
 class Student:
     marks=10
+    
     def sample(self):
         print("hello world")
 # here we created only plan nothing but class, when we are creating
@@ -72,6 +73,7 @@ s1.sample("ram",30)
 # example 3:
 class student:
     def __init__(self,name,age):
+
         self.name=name
         self.age=age
     def sample(self,address):
