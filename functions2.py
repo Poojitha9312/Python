@@ -373,7 +373,8 @@ fun(5)
 # The main function of lamda is for onetime use...
 #Example:
 x=lambda a,b,c:a+b+c
-print(x(1,8,3))
+print(x
+(1,8,3))
 
 
 print((lambda a,b:a+b)(10,20)) #we can write in one line also
@@ -458,7 +459,6 @@ print(r)
 print(type(r))
 for i in r:
     print(i)
-
 # here it is an iterable object so we can use for loop
 
 # second program using lambda function:
