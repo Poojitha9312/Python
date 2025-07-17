@@ -2,7 +2,6 @@
 # list is mutable in nature..mutable means changeable after creation of object
 # we can do any modifications on it..... 
 #  list can be in square brackets[] and separated by comma
-
 # creation of  empty list:
 l=[]
 print(l)

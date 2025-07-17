@@ -1,8 +1,3 @@
-def sample():
-    yield 1
-    yield 2
-    yield 3
-x=sample()
-print(type(x))
-for i in x:
-    print(i)
+l=[10,list({"name": "rama"}),list(((20,40)))]
+print(l)
+print(type(l))
