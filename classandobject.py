@@ -73,7 +73,6 @@ s1.sample("ram",30)
 # example 3:
 class student:
     def __init__(self,name,age):
-
         self.name=name
         self.age=age
     def sample(self,address):

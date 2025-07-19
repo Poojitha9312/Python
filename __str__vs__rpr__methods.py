@@ -1,12 +1,12 @@
-# __str_method is dunder method or magic method used to represent the object as a string...used to print the output as string to users....
-
-# without using __str__ method:
 class student:
     def __init__(self,name,age):
         self.name=name
         self.age=age
 s1=student("snehi",15)
-print(s1)
+print(s1)# __str_method is dunder method or magic method used to represent the object as a string...used to print the output as string to users....
+
+# without using __str__ method:
+
 
 #Output:
 '''<__main__.Student object at 0x0000021478455DF0>''' #Here it is not human readable language

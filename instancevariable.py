@@ -57,7 +57,7 @@ class student:
         self.rollno=rollno
 
 s1=student("ruchi",15,13)
-s2=student("snehi",15,12)
+s2=student("snehi",16,12)
 s3=student("rishitha",20,36)
 print(s1.__dict__)
 print(s2.__dict__)
