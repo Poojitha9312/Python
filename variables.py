@@ -32,7 +32,7 @@ print(x)
 # output variables:
 # here we can add text and variable by using + symbol
 x="is awesome"
-print("python" +x)
+print("python"+ x)
 # but we cant add text and integer
 x=2
 print("python"+x)
