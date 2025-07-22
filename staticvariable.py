@@ -1,4 +1,4 @@
-#--------------------------STATIC VARIABLE---------------------------
+#--------------------------STATICVARIABLE---------------------------
 # It is also called as class level variable
 # static variable belongs to class not object
 
