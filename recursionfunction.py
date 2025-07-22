@@ -20,8 +20,7 @@ def sample():
     if choice==1:
         sample()
     else:
-        exit(0)
-        
+        exit(0)   
 sample()
 
 #WAP to print *'s using recursion
