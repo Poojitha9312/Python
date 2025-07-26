@@ -1,10 +1,13 @@
-l=['h','e','r','a','r','s','p','k']
-def sample(y):
-    vowels=['a','e','i','o','u']
-    if (y in vowels):
-        return True
-    else:
-        False
-r=list(filter(sample,l))
-print(r)
-print(type(r))
+class calculator:
+    @staticmethod
+    def add():
+        a=10
+        b=20
+        result=a+b
+        print(f"Addition result is {a+b}")
+        calculator.sub(30,40)
+    def sub(a,b):
+        result=a-b
+        print(f"Subtraction result is {a-b}")
+        
+calculator.add()

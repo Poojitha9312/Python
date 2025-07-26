@@ -22,10 +22,10 @@ class calculator:
         print(f"Subtraction result is {a-b}")
         
 calculator.add() #calling static method using class name
-c1=calculator()
-c1.add()
+# c1=calculator()
+# c1.add()
 calculator.sub()#calling static method using class name
-c1.sub()
+# c1.sub()
 
 
 
