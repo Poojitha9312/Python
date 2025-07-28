@@ -5,6 +5,7 @@
 . If there is no outer class then there is no chance of inner class.
 '''
 
+
 class Outer:
     def __init__(self):
         print("Outer class")
