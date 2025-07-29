@@ -1,13 +1,18 @@
-class Outer:
-    def __init__(self):
-        print("Outer class")
-    class Inner:
-        def __init__(self):
-            print("Inner class")
-# #outer class object creation
-o=Outer()
+class Duck:
+    def swim(self):
+        print("Duck is swimming")
+    
+    def fly(self):
+        print("Duck is Flying")
+class Whale:
+    def swim(self):
+        print("Whale is Swimming")
 
-# #inner class object creation in different ways
-i=o.Inner()
-i1=Outer.Inner()
-i2=Outer().Inner()
+def search(x):
+    x.swim()
+    x.fly()
+    
+d=Duck()
+w=Whale()
+search(d)
+search(w)

@@ -50,10 +50,10 @@ b.method1() #Here B object has no attribute 'method1'
 def m1(self):
     x="ram"
     print(x)
-    def m2(self):
+def m2(self):
         y="ruchi"
         print(y)
-    def m3(self):
+def m3(self):
         z="kaveri"
 class B:
     def sample(self):
