@@ -1,18 +1,6 @@
-class Duck:
-    def swim(self):
-        print("Duck is swimming")
-    
-    def fly(self):
-        print("Duck is Flying")
-class Whale:
-    def swim(self):
-        print("Whale is Swimming")
-
-def search(x):
-    x.swim()
-    x.fly()
-    
-d=Duck()
-w=Whale()
-search(d)
-search(w)
+class student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+s1=student("snehi",15)
+print(s1)
