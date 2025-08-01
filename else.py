@@ -65,7 +65,7 @@ def add(a,b):
     else:
         print(f"The result is:{result}")
 add(int(input("Enter a value:")),int(input("Enter b value:")))
-b
+
 '''
 Output:
 Enter a value:10
