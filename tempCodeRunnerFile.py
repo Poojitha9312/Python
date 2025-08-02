@@ -1,11 +1,12 @@
-try:
-    print(1)
-    print(2)
-    print("File open code")
-    print(4)
-    print(10/0)
-    print("File close code") #dont write clean-up code inside the try block because it can't execute
-except FileNotFoundError as e:
-    print(e)
-finally:
-    print("Finally Block executed")
+class employee:
+    def __init__(self,sal):
+        self.sal=sal
+    def __lt__(self,other):
+        return self.sal<other.exp
+class person:
+    def __init__(self,exp):
+        self.exp=exp
+
+e1=employee(40000)
+p1=person(45000)
+print(e1<p1)
