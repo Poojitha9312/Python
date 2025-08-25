@@ -13,6 +13,7 @@
 '''
 ###### Multitasking ######
 '''
+
 --->Doing multiple tasks in simultaneously called multitasking.
 --->Generally multitasking are of 2 types.
     =>Thread based multitasking(Multiple tasks will execute with in a process, and each tasks are independent.)

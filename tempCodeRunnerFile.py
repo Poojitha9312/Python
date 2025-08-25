@@ -1,12 +1,10 @@
-class employee:
-    def __init__(self,sal):
-        self.sal=sal
-    def __lt__(self,other):
-        return self.sal<other.exp
-class person:
-    def __init__(self,exp):
-        self.exp=exp
-
-e1=employee(40000)
-p1=person(45000)
-print(e1<p1)
+class Test:
+    def m1(self):
+        for i in range(5):
+            print("Ram")
+    def m2(self):
+        for i in range(5):
+            print("Seetha")
+obj=Test()
+obj.m1()
+obj.m2()
