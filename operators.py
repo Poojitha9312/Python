@@ -26,7 +26,7 @@ print(mul)
 div=a/b
 print(div)
 
-# 5.Modulus  (reminder)
+# 5.Modulus(%)  (reminder)
 mod=a%b
 print(mod)
 
