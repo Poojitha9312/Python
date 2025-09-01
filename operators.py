@@ -22,7 +22,7 @@ b=10
 mul=a*b
 print(mul)
 
-#4.division(/)   Quotient
+#4.division(/)   (Quotient)
 div=a/b
 print(div)
 
