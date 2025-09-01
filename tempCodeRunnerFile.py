@@ -1,8 +1,6 @@
-f=True
-g=False
-print(type(g))
-print(type(f))
-print(bool(1))
-print(bool(0))    # except zero if we given any number the output bocomes true
-print(bool(8.2))
-print(bool(8+7j))
+x=["apple","banana"]
+y=["apple","banana"]
+z=x
+
+# if the two variables are not pointing to same address location then is not operator returns true otherwise it returns false
+print(x is not z)

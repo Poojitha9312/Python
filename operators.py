@@ -3,7 +3,7 @@
 # b=10
 # c=a+b
 # print(c)
-# Arithmetic opertaor:
+# Arithmetic opertaor:(+,-,*,/,%,//,**)
 # 1. Addition(+)
 a=20
 b=10
