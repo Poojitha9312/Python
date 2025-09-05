@@ -79,7 +79,7 @@ else:
 
 # write a program to print student marks:
 marks=int(input(" Enter your marks :"))
-if marks>=85 and marks<100:
+if marks>85 and marks<=100:
     print(" congrats you have scored A+grade")
 elif marks>65 and marks<=80:
     print("You have scored  A grade")
