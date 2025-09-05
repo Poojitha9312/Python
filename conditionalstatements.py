@@ -66,11 +66,7 @@ else:
     print(" you have given odd number")
 
 # # write a program to check whether the person is eligible to vote or not:
-age=int(input("Enter your age :"))
-if age>=18:
-    print(" You are eligible to vote now")
-else:
-    print(" you have to wait")
+
 
 
 # if-elif:
@@ -83,7 +79,7 @@ else:
 
 # write a program to print student marks:
 marks=int(input(" Enter your marks :"))
-if marks>85 and marks<100:
+if marks>=85 and marks<100:
     print(" congrats you have scored A+grade")
 elif marks>65 and marks<=80:
     print("You have scored  A grade")
