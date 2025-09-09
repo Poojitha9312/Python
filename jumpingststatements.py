@@ -12,7 +12,7 @@ for i in range(1,7):
     
 
 # continue:
-# It is uesd to skip the part of specific iteration
+# It is used  to skip the part of specific iteration
 # syntax:  continue
 for i in range(1,7):
     if i==5:
