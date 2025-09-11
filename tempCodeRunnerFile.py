@@ -1,2 +1,3 @@
-l=list(range(1,20,2))
+l=list(range(20))
 print(l)
+print(type(l))
