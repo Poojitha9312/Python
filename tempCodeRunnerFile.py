@@ -1,3 +1,2 @@
-l=[10,{"name": "rama"},list((20,40))]
+l=list(range(1,20,2))
 print(l)
-print(type(l))
