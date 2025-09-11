@@ -103,7 +103,7 @@ n=len(l)
 for i in range(n):
     print(" {}   at present index is {}  /  {}".format((l[i]),i,i-n))
 
-# updaating the list elements:
+# updating the list elements:
 l=[10,2,3,4,50,60,8,9]
 l[2]=20
 print(l)

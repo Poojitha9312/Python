@@ -1,5 +1,8 @@
-n=5
-for i in range(n):
-    for j in range(i,n):
-        print("*",end=" ")
-    print()
+def hide_char():
+    name="Rama"
+    for i in name:
+        if i=="a":
+            continue
+        print(i)
+hide_char()
+    
