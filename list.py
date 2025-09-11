@@ -31,7 +31,6 @@ print(l)
 
 # characterstics of list:
 # list is maintaining order in which order we inserted elements in same order stored in list...
-
 # list can hold different dataitems..
 # list is dynamic in nature based on our requirement we can increase or decrease the size of the list....
 # list is mutable in nature means which is changeable, we can modify the list items..

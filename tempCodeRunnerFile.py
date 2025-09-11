@@ -1,8 +1,2 @@
-def hide_char():
-    name="Rama"
-    for i in name:
-        if i=="a":
-            continue
-        print(i)
-hide_char()
-    
+l=list(range(1,20,2))
+print(l)
