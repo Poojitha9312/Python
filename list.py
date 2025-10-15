@@ -58,6 +58,7 @@ print(l[-1:-5])
 print(l[-5:])
 
 
+
 l=[10,{"name": "rama"},list((20,40))]
 print(l)
 print(type(l))
