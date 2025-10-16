@@ -1,3 +1,2 @@
-m="WELCOME TO HIE TECH SOLITIONS"
-l=m.split('O')
-print(l)
+d={1:"ram",2:"snehi",3:"ruchi"}
+print(d.items())

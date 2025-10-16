@@ -164,6 +164,7 @@ print('.'.join(s1))    # Hello.World
 
 #strip Method (Remove space from string)
 s1="  Rama  "
+print(s1)
 print(len(s1))
 print(len(s1.strip()))
 print(s1.strip())

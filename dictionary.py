@@ -128,7 +128,7 @@ print(d.items())
 
 # if we want one by one value:
 d={1:"ram",2:"snehi",3:"ruchi"}
-for i in d.items():
+for i in d.items():6
     print(i)
 
 # pop() Method:
