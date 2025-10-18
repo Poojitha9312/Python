@@ -1,17 +1,18 @@
-class student:
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-    def __str__(self):
-        print("here __str__method will executes") 
-        return f"My name is {self.name} and My age is {self.age}"
-    def __repr__(self):
-        print("here __repr__method will executes")
-        return f" My name is {self.name} and my age is {self.age}"
-s1=student("snehi",15)
-s2=student("vasu",30)
-print(s1)
-print(s2)
+x=20
+y=8.2
+z=7+8j
 
-s3=[(student("kavya",25),student("gopal",30))]
-print(s3)
+# convert from int to float:
+a=float(x)
+print(a)
+print(type(a))
+
+# convert from float to int:
+b=int(y)
+print(b)
+print(type(b))
+
+#convert int to complex:
+c=complex(x)
+print(c)
+print(type(c))
