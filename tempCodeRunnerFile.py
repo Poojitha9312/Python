@@ -1,9 +1,13 @@
 class student:
-    def __init__(self,name):
+    def __init__(self,name,age):
         self.name=name
-s1=student("kaveri")
+        self.age=age
+s1=student("priya",20)
 print(s1.__dict__)
-s1.age=25
-s1.address="vizag"
-s1.rollno=124
-print(s1.__dict__)
+
+class student:
+    marks=100
+    def sample(self):
+        print("Hello world")
+s1=student()
+print(student.__dict__)
