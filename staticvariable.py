@@ -139,6 +139,7 @@ student.sample()
 class student:
     college_name="pragati college"
 print(student.college_name)
+s1=student()
 student.college_name="geetham college"
 print(student.college_name)
 
