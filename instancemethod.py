@@ -45,6 +45,7 @@ class Test:
     def access(self):
         print(f"The value of a is {self.a} and the value of b is {self.b}")
     
+    
     def update(self,x,y):
         self.a=x
         self.b=y
