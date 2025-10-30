@@ -1,7 +1,8 @@
 '''
 Duck typing is to determine if an object is suitable for a purpose by checking for the presence of certain methods and properties rather than objects actual type.
 '''
-
+#  If it looks like a duck, swims like a duck,and quacks like a duck,then it probbably is a duck...
+#  which simply means it doesnt matter it is duck or not if the behaviour of the bird match with the duck then it is a duck....
 #Example
 class A:
     def m1(self):
