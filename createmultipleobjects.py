@@ -54,11 +54,11 @@ for i in range(len(names)):
 
 print(obj_list)
 print(30*'=')
-# print(obj_list[0].name)
-# print(obj_list[0].age)
+print(obj_list[0].name)
+print(obj_list[0].age)
 
-# print(obj_list[1].name)
-# print(obj_list[1].age)
+print(obj_list[1].name)
+print(obj_list[1].age)
 
 # upto 5 we have to given like this instead of that method we can use this below method.....
 
