@@ -1,9 +1,4 @@
-class Outer:
-    def __init__(self):
-        print("Outer class")
-    class Inner:
-        def __init__(self):
-            print("Inner Class") 
-    i=Inner()   
-    
-o=Outer()
+x=10
+
+x=9.2
+print(x)
