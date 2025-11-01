@@ -116,7 +116,7 @@ class Student:
 class Staff:
     @staticmethod
     def modify_age(x): 
-        x=31
+        print(x)
 
 s1=Student("Ram",30)
 Staff.modify_age(s1.age)  #Here s1 has two objects but we are taking only age in to x.
