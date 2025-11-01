@@ -12,7 +12,7 @@
 # #1. HAS-A Relationship
 # HAS-A Relationship is also known as Composition or Containership or Complex Objects.
 # In HAS-A Relationship we will build objects from smaller objects.
-# Ex: College is complex object and departments are smaller objects.
+# Ex: University is complex object and departments are smaller objects.
 
 # Here without College(Container Object) there are no departments(Contained objects).
 class car:
