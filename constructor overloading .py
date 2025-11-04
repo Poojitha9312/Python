@@ -15,7 +15,7 @@ class student:
         print(b)
         print(c)
 s1=student(10)
-# here it will raise TypeError student.init missing two positional arguments..because we alreay know that python will takes the latest one....
+# here it will raise TypeError student.init missing two positional arguments..because we already know that python will takes the latest one....
 
 # Example 2..
 # How to archieve Constructor overloading in python by using variable length arguments.
