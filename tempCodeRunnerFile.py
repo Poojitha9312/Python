@@ -1,11 +1,7 @@
-class A:
-    def method1(self):
-        print('A class method')
-class B:
-    def method1(self):
-        print('B class Method')
-class C(B,A): #Here is the priority first A will execute.
+class Myclass:
     pass
-    
-c=C()
-c.method1()
+
+print(issubclass(Myclass,object)) # True because Myclass is a subclass of object.
+
+a=Myclass()
+print(isinstance(a,object))
