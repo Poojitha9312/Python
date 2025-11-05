@@ -1,7 +1,12 @@
-class Myclass:
-    pass
+class employee:
+    def __init__(self,sal):
+        self.sal=sal
+    def __lt__(self,other):
+        return self.sal<other.exp
+class person:
+    def __init__(self,exp):
+        self.exp=exp
 
-print(issubclass(Myclass,object)) # True because Myclass is a subclass of object.
-
-a=Myclass()
-print(isinstance(a,object))
+e1=employee(40000)
+p1=person(45000)
+print(e1<p1)

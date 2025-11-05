@@ -16,7 +16,7 @@
 --->Child class is responsible to provide implementation part for parent class.
 --->We can not create object for abstract class.
 --->Abstract class is the blueprint for class.
---->To define abstract class we required to imprt abc module and extends from ABC class.
+--->To define abstract class we required to import abc module and extends from ABC class.
 '''
 
 #Example: General Example of class Creation.
