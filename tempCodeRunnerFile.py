@@ -1,12 +1,11 @@
-class employee:
-    def __init__(self,sal):
-        self.sal=sal
-    def __lt__(self,other):
-        return self.sal<other.exp
-class person:
-    def __init__(self,exp):
-        self.exp=exp
+from abc import ABC, abstractmethod
+class Test(ABC):
+    @abstractmethod
+    def m1(self):
+        pass
 
-e1=employee(40000)
-p1=person(45000)
-print(e1<p1)
+class Child(Test):
+    def m1(self):
+        print("Hello")
+c=Child()
+c.m1()
