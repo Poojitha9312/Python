@@ -1,11 +1,8 @@
-from abc import ABC, abstractmethod
-class Test(ABC):
-    @abstractmethod
-    def m1(self):
-        pass
-
-class Child(Test):
-    def m1(self):
-        print("Hello")
-c=Child()
-c.m1()
+class A:
+    _a=10
+    __b=20
+    _c__=30
+    ___d=40
+    __e__=50
+# if we want to know that we have to check directory...
+print(dir(A))

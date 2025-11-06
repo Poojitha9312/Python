@@ -18,9 +18,19 @@
 
 
 # But how can we know the namemangling occurs in interpreter..
+#  Here see one example for namemangling...
+class A:
+    _a=10
+    __b=20
+    _c__=30
+    ___d=40
+    __e__=50
+# if we want to know that we have to check directory...
+print(dir(A))
 
+# output:
 
-
+['_A___d', '_A__b', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__e__', '__eq__', '__firstlineno__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', '_a', '_c__']
 
 #Ex: Accessing variable outside the class
 class A:
