@@ -7,6 +7,20 @@
 # 1. Using Name Mangling (For Double Underscore Variables)
 # Python "mangles" the names of private variables by internally renaming them to include the class name. This makes it harder (but not impossible) to access them from outside.
 
+# if we want to know in simple way what is name manglin
+#  if we declare a variable with one or more underscores 
+# then the interpreter taken as that variable with _classname___variablename....
+# we know that private attribute can access only within the 
+#class...
+# if user has a requirement to access an private variable
+# outside the class.. then we can use name mangling process....
+# then we can access the private attribute outside the class..
+
+
+# But how can we know the namemangling occurs in interpreter..
+
+
+
 
 #Ex: Accessing variable outside the class
 class A:
