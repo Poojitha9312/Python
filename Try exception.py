@@ -110,7 +110,7 @@ Exception distrub normal flow of execution.
 If exception will occur, then we can't exception normal execution or smooth execution.
 Exception handling is a mechanism or technique or way to handle exception.
 If exception handled successfully then we can except smooth termination.
-It is highly recommended to handel the exception.
+It is highly recommended to handle the exception.
 '''
 #Handling Errors with Try and Except
 #Example:
