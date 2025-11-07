@@ -1,8 +1,7 @@
-class A:
-    _a=10
-    __b=20
-    _c__=30
-    ___d=40
-    __e__=50
-# if we want to know that we have to check directory...
-print(dir(A))
+a=100
+print(1)
+a=20
+print(2)
+assert a==100 #AssertionError because a is updated to 20
+print(3)
+print(4)
