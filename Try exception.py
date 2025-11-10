@@ -195,12 +195,7 @@ Enter b value:0
 '''
 
 #Example: Handling error with alternate handling code
-a=int(input("Enter a value:"))
-b=int(input("Enter b value:"))
-try:
-    print(a/b)  
-except ZeroDivisionError:
-    print(a+b)
+
 
 '''
 Output:
@@ -211,12 +206,7 @@ Enter b value:0
 
 #NameError
 #Example: Handling error with Error Message
-a=int(input("Enter a value:"))
-b=int(input("Enter b value:"))
-try:
-    print(a+c)
-except NameError:
-    print(NameError)
+
     
 '''
 Output:

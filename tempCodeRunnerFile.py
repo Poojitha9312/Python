@@ -1,7 +1,8 @@
-a=100
-print(1)
-a=20
-print(2)
-assert a==100 #AssertionError because a is updated to 20
-print(3)
-print(4)
+def add(a,b):
+    try:
+        result=a+b
+    except Exception as e:
+        print(e)
+    else:
+        print(f"The result is:{result}")
+add(int(input("Enter a value:")),int(input("Enter b value:")))
