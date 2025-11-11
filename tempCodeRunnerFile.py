@@ -1,8 +1,8 @@
-def add(a,b):
-    try:
-        result=a+b
-    except Exception as e:
-        print(e)
-    else:
-        print(f"The result is:{result}")
-add(int(input("Enter a value:")),int(input("Enter b value:")))
+s=open('sample1.py',mode='w+')
+print(s.tell()) #tell is used to know the current cursor pointer place
+s.write("w+ mode")
+print(s.tell())
+s.seek(0) #seek is used to Move the file pointer to a specific position.
+print(s.tell())
+print(s.read())
+s.close()
