@@ -1,4 +1,3 @@
-
-a=int(input("enter a value:"))
-print(a)
-print(type(a))
+    
+for i in range(10):
+    pass
