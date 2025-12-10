@@ -63,6 +63,8 @@ print(t[-1:0:-3])
 
 
 # # creation of tuple elements using eval() function:
+t=eval(input("enter tuple elements:"))
+print(t)
 
 
 
