@@ -128,7 +128,7 @@ print(d.items())
 
 # if we want one by one value:
 d={1:"ram",2:"snehi",3:"ruchi"}
-for i in d.items():6
+for i in d.items():
     print(i)
 
 # pop() Method:
@@ -137,9 +137,9 @@ for i in d.items():6
 # in dict pop method we have to give atleast one argument if we dont give it will raise an Typerror...
 d={1:"ram",2:"snehi",3:"ruchi"}
 print(d)
-print(d.pop(1))
+# print(d.pop(1)
+# print(d.pop())
 print(d)
-print(d.pop())
 print(d.pop(5))
 
 #popitem Method:
@@ -281,6 +281,6 @@ print(d3)
     
 
 
-
+3
 
 

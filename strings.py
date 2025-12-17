@@ -2,7 +2,6 @@
 # string can be defined as sequence of characters represented in quotation marks
 a="hietechsolutions"
 print(a)
-
 print(type(a)) #we can use '' or "" or ''' ''' or """ """
 # in python strings are immutable.....
 

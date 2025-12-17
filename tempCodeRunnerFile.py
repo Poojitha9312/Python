@@ -1,3 +1,4 @@
-l=[1,3,5,2,"snehitha","poojitha"]
-l.sort()
-print(l)
+def say():
+    print("ram")
+    return("hello")
+print(say())

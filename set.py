@@ -9,7 +9,6 @@
 # creation of empty set:
 s={}
 print(s)
-
 print(type(s))
 # Note: if we create a empty set it will taken as dictionary...
 
@@ -77,6 +76,7 @@ print(s)
 s.add(35)
 print(s)
 s.add(10)
+s.add(90,75)
 print(s)
 
 # 2.update Method:
@@ -138,8 +138,7 @@ s={10,45,"ruchi",False}
 print(s)
 s.pop()
 print(s)
-s.pop()
-print(s)
+print(s.pop())
 
 # 8.Enumerate method:
 # It is used to return the index value and the value
