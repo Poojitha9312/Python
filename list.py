@@ -50,12 +50,12 @@ print(l[-4])
 
 # Accessing elements by using slicing:
 l=[10,20,30,"poojitha",8.2,"snehitha"]
-print(l)
-print(l[::])
-print(l[0:4])
-print(l[-1])
-print(l[-1:-5])
-print(l[-5:])
+print(l) # [10, 20, 30, 'poojitha', 8.2, 'snehitha']
+print(l[::])   # [10, 20, 30, 'poojitha', 8.2, 'snehitha']
+print(l[0:4])  # [10, 20, 30, 'poojitha']
+print(l[-1])  # snehitha
+print(l[-1:-5]) # []
+print(l[-5:]) # [20, 30, 'poojitha', 8.2, 'snehitha']
 
 
 
