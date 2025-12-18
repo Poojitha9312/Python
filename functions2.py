@@ -316,10 +316,13 @@ def outer_fun():
     
 x=outer_fun() #when outer function is equal to some variable then it returns inner function as well
 x() 
+# Here, `outer_fun()` returns the **reference** of `inner_fun`,  
+# and `x()` executes that inner function.
 
 # output:
 # Inside outer function
 # Inside inner function
+
 
 # what is recursion:
 # A function call itself is called as recursion
