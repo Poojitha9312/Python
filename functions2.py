@@ -274,6 +274,22 @@ def sample():
     print("The value of a is :", a)
 sample()
 
+
+### Example 3 — Accessing global variable using `globals()`
+
+a = 10
+def sample():
+    a = 20
+    print(a)              # local
+    print(globals()['a']) # global
+
+sample()
+
+
+# 🧾 Output:
+# 20
+# 10
+
 # Nested function:
 # A function present inside another function is known as nested function...
 def outer_fun():
