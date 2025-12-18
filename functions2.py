@@ -334,6 +334,11 @@ def sample():
     sample()
 sample()
 
+# How does Python “know” the recursion depth is exceeded?
+# Python keeps an internal counter of how many recursive calls are active at one time.
+# Default recursion limit ≈ 1000 calls
+# When the limit is crossed → RecursionError
+
 '''Example: Option to stop recursive function.'''
 def sample():
     print("welcome to Janahita\n\n")

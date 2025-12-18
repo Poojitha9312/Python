@@ -1,4 +1,4 @@
-x=10
 def sample():
-    x=x+5
+    print("hai welcome to python")
+    sample()
 sample()
