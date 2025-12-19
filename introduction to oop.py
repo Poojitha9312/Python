@@ -1,8 +1,5 @@
 
 # 🧩 Object-Oriented Programming (OOP) — Introduction
-
-
-
 ## 🔹 What is OOP?
 
 **OOP (Object-Oriented Programming)** is a programming paradigm used to structure code efficiently by grouping related **data and functions** into a single unit called a **class**.
