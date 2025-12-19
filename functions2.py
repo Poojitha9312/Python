@@ -304,7 +304,7 @@ def outer_fun():
     print("Inside outer function")
     def inner_fun():
         print('Inside inner function')
-    inner_fun()
+    # inner_fun()
     
 outer_fun()
 #inner_fun() #error
@@ -365,8 +365,8 @@ sample()
 '''
 def fun(num):
     print('*'*num)
-    # if num==5:
-    #     return
+    if num==5:
+       return
     fun(num+1)
 
 fun(1)
@@ -381,8 +381,8 @@ fun(1)
 '''
 def fun(num):
     print('*'*num)
-    # if num==1:
-    #     return
+    if num==1:
+        return
     fun(num-1)
 
 fun(5)

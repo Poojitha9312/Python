@@ -1,4 +1,4 @@
-def sample():
-    print("hai welcome to python")
-    sample()
-sample()
+s1={10,20,30}
+s2={10,20}
+s3=s1+s2
+print(s3)

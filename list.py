@@ -9,6 +9,7 @@ print(l)
 # creation of list:
 l=[10,20,"poojitha",8.2,"snehitha",True]
 print(l)
+print(type(l))
 
 # list function():
 # we can change tuple and dict elements  in to list by using list function
