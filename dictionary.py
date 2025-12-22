@@ -1,6 +1,6 @@
 # Why we are using dictionary:
 # By using list,set,tuple we will store only values
-# sometimes as s programmer we required to key and value as a pair
+# sometimes as a  programmer we required to key and value as a pair
 # in that case we can go for dictionary....
 
 # what is dictionary?
