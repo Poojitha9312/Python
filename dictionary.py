@@ -137,7 +137,7 @@ for i in d.items():
 # in dict pop method we have to give atleast one argument if we dont give it will raise an Typerror...
 d={1:"ram",2:"snehi",3:"ruchi"}
 print(d)
-# print(d.pop(1)
+print(d.pop(1))
 # print(d.pop())
 print(d)
 print(d.pop(5))
@@ -281,6 +281,6 @@ print(d3)
     
 
 
-3
+
 
 

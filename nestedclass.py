@@ -1,4 +1,5 @@
-#Nested class
+#Nested class:
+# “Nested class is used when one class is a part of another class and has no independent use.”
 '''
 . If a class is present inside the another class then this class is called an inner class.
 . Inner class always depends upon outer class.

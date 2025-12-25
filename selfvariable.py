@@ -9,10 +9,11 @@ self is used to refer to a current class object or current memory.
 '''We can access object attributes and methods outside of the class'''
 
 # Example:
+
 class student:
     def __init__(self,name,age):# constructor with self
         self.name=name
-        self.age=age
+        self.age=age 
     def sample(self):
         print(f"My name is {self.name} and my age is {self.age}")
 s1=student("mahi",25)# here s1 is reference variable
