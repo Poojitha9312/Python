@@ -76,7 +76,7 @@ class Student:
 class Staff:
     @classmethod
     def modify_age(cls, x):  # class method (uses cls)
-        print(f'Modified Age: {x}')
+        print(f'Age is: {x}')
 
 s1 = Student("Ram", 30)
 Staff.modify_age(s1.age)  # works like static method, but passes class as first arg
