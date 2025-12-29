@@ -15,6 +15,17 @@
 # Ex: University is complex object and departments are smaller objects.
 
 # Here without College(Container Object) there are no departments(Contained objects).
+
+# Example:
+# Student HAS-A Bag
+# Student is not a bag
+# Student has a bag
+# Bag can exist alone
+
+# This is HAS-A relationship
+# HAS-A relationship means one class contains an object of another class.
+
+
 class car:
     def __init__(self,cname,ccolour,cprice):
         self.cname=cname
