@@ -37,6 +37,10 @@ search(a)
 b=B()
 search(b)
 
+c=C()
+search(c)
+
+
 #Example
 class Duck:
     def swim(self):
