@@ -15,6 +15,8 @@ Duck typing is to determine if an object is suitable for a purpose by checking f
 # The teacher does not care what you are holding.
 # The teacher only cares:
 # Can you write?
+
+
 #Example
 class A:
     def m1(self):
