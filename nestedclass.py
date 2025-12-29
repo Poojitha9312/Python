@@ -14,11 +14,11 @@ class Outer:
         def __init__(self):
             print("Inner class")
 # #outer class object creation
-o=Outer()
+# o=Outer()
 
 # #inner class object creation in different ways
-i=o.Inner()
-i1=Outer.Inner()
+# i=o.Inner()
+# i1=Outer.Inner()
 i2=Outer().Inner()
 
 #object creation inside outer class

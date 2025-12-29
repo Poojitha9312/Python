@@ -56,7 +56,7 @@ s1.sample()
 class Test:
     a=10
     b=20
-    
+    3
     @classmethod
     def access(cls):
         print(f"The value of a is {cls.a} and the value of b is {cls.b}")
