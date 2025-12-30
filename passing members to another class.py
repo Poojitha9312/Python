@@ -1,5 +1,14 @@
 #Passing one class members to another class using Instance method............
 
+
+# In Python, you can pass **one class’s object or its data** to another class using:
+
+# 1. **Instance Methods**
+# 2. **Class Methods**
+# 3. **Static Methods**
+
+# passing one class object reference to another class  by using 
+# Instance method
 class student:
     def __init__(self,name,age,address,rollno):
         self.name=name

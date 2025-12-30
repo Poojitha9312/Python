@@ -30,7 +30,7 @@ class employee:
         self.ename=ename
         self.eage=eage
         self.eid=eid
-        self.l =laptop("Lenovo", "Grey", "40K")
+        self.l =laptop("Rog", "Grey", "40K")
         self.c=car("BMW","black","1cr")
     def employee_details(self):
         print(f"my name is {self.ename}")
@@ -39,5 +39,5 @@ class employee:
         self.l.laptop_details(self.ename)
         self.c.car_details(self.ename)
           # Pass the emp_name to the Laptop's details
-s1=employee("ganilakshmi",20,1026)
+s1=employee("kishore",20,1026)
 s1.employee_details()
