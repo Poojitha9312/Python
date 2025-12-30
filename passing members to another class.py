@@ -7,6 +7,26 @@
 # 2. **Class Methods**
 # 3. **Static Methods**
 
+# Real-life example 🏫
+# A Student has a name
+# A School shows student details
+# The School should not store student data.
+# It should just use it.
+
+
+# What’s happening?
+# Student keeps student data
+# School uses that data
+# Data is passed, not copied
+
+# Here are the advantages in very simple lines 👇
+# Keeps code simple and organized
+# Makes code easy to reuse
+# Easy to change or update later
+# Each class does only one job
+# Makes programs easy to understand and maintain
+
+
 # passing one class object reference to another class  by using 
 # Instance method
 class student:
