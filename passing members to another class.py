@@ -149,3 +149,38 @@ class Staff:
 s1=Student("Ram",30)
 Staff.modify_age(s1.age)  #Here s1 has two objects but we are taking only age in to x.
 
+## 🧠 Summary Table
+
+# | Method Type | Decorator | Parameter | Use Case | How to Call | Example Use |
+# |--------------|------------|------------|-----------|--------------|--------------|
+# | **Instance Method** | None | `self` | Pass one object to another | Through object | `obj.method()` |
+# | **Class Method** | `@classmethod` | `cls` | Pass or modify shared data | Class or object | `Class.method()` |
+# | **Static Method** | `@staticmethod` | None | Utility or helper logic | Class or object | `Class.method()` |
+
+
+
+## 🧩 Real-World Example
+
+
+class Engine:
+    def start(self):
+        print("Engine started")
+
+class Car:
+    def __init__(self, name):
+        self.name = name
+        self.engine = Engine()  # creating Engine inside Car
+
+    def drive(self):
+        print(f"Driving {self.name}")
+        self.engine.start()  # calling method of another class
+
+my_car = Car("Tesla")
+my_car.drive()
+
+
+# 🧾 **Output:**
+# ```
+# Driving Tesla
+# Engine started
+
