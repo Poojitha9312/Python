@@ -363,7 +363,7 @@ sample()
 ****
 *****
 '''
-def fun(num):
+def fun(num):-
     print('*'*num)
     if num==5:
        return
