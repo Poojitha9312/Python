@@ -4,6 +4,7 @@ Duck typing is to determine if an object is suitable for a purpose by checking f
 #  If it looks like a duck, swims like a duck,and quacks like a duck,then it probably is a duck...
 #  which simply means it doesnt matter it is duck or not if the behaviour of the bird match with the duck then it is a duck....
 
+
 # Another example:
 # A teacher says:
 # “Anyone who can write may answer the question.”
