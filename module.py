@@ -68,7 +68,7 @@ sub(50,10)
 '''•	Giving another name to module member is called module member aliasing.
         Ex: from sample import add as a, sub as s'''
 
-
+# dir() vs help()
 
 #dir() function will give only the members
 
