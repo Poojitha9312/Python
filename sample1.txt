@@ -1,0 +1,4 @@
+This is written using the 'with' statement.
+It will automatically close the file when done.
+Appended line using with statement.
+Appended line using with statement.
