@@ -67,8 +67,6 @@ else:
 
 # # write a program to check whether the person is eligible to vote or not:
 
-
-
 # if-elif:
 if 5<2:
     print("this is if")
@@ -83,6 +81,7 @@ if marks>=85 and marks<100:
     print(" congrats you have scored A+grade")
 elif marks>65 and marks<=80:
     print("You have scored  A grade")
+    
 elif marks>45 and marks<=60:
     print(" you have scored B grade")
 elif marks>30 and marks<=40:

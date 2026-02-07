@@ -1,4 +1,3 @@
-from sample1 import *
-s = open('sample1.txt', mode='r')
-print(s.read())
-s.close()
+x=2
+x**=3
+print(x)
