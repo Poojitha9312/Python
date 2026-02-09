@@ -1,3 +1,4 @@
-x=2
-x**=3
-print(x)
+a=int(input("enter a value:"))
+b=int(input("enter b value:"))
+c=a+b
+print(c)
