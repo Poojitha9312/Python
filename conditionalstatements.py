@@ -1,5 +1,26 @@
-# Conditional statements : conditional statements are also known as decision making statements...
-# we need to use this conditional statements to execute the block of code if the given condition is true or false
+
+# Conditional statements are used to **make decisions** in Python.  
+# They execute a block of code **only if a specific condition is True**.
+
+# 💡 **Simple Meaning:**  
+# > Python decides *what to do next* based on whether a condition is True or False.
+
+
+
+## 🔹 Types of Conditional Statements
+
+# ```text
+# +------------------+-----------------------------------------+
+# | Type             | Description                             |
+# +------------------+-----------------------------------------+
+# | if               | Executes a block only if condition True |
+# | if...else        | Executes one block if True, another if  |
+# |                  | False                                   |
+# | if...elif...else | Checks multiple conditions in sequence  |
+# | Nested if        | if statement inside another if          |
+# | Short-hand if    | Write if in one line                    |
+# | Ternary Operator | Compact form of if...else in one line   |
+# +------------------+-----------------------------------------+
 # Following are conditional statements:
 #                        1) if
 #                        2) if-else
