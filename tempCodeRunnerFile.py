@@ -1,2 +1,3 @@
-l=[10,20,10,40,50]
+l=["apple","banana","carrot", "mango","strawberry" ]
+l.sort(reverse=True)
 print(l)

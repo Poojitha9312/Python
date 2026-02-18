@@ -57,7 +57,8 @@ count=0
 for i in range(len(l)):
     if l[i]==num:
         count=count+1
-print(count)
+
+
 
 # 4.index():
 # it is used to return the index value of specific element
