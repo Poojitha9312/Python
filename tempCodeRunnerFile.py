@@ -1,8 +1,3 @@
-i=1
-while(i<=3):
+s1="Rama"
+for i in enumerate(s1):
     print(i)
-    j=1
-    while(j<=3):
-        print(j)
-        j=j+1
-    i=i+1
