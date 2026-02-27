@@ -97,35 +97,80 @@ add(10,20)
 
 
 
-# call by value and call by reference:
-# If we made any changes on called function it will not reflect on outside the function when we call with value.
-def sample(a):
-    print("inside the function before modification",a)
-    print("inside the function before modification",id(a))
-    a=a+10
-    print(" after modification inside the function",a)
-    print("after modification inside the function",id(a))
-a=23
-print(" outside the function before calling function",a)
-print(" outside the function before function calling",id(a))
-sample(a)
-print("outside the function after modification",a)
-print("outside the function after calling",id(a))
+# ## 🧠 Understanding Call by Value vs Call by Reference (Python Perspective)
 
-# call by reference:-
-'''If we made any changes on called function it will reflect on outside the function when we call with reference.'''
-def sample(a):
-    print(" inside the function before modification",a)
-    print("inside the function before modification",id(a))
-    a.append(100)
-    print(" after modification inside the function",a)
-    print("after modification inside the function",id(a))
-a=[10,20,30]
-print(" outside the function before calling function",a)
-print(" outside the function before function calling",id(a))
-sample(a)
-print("outside the function after modification",a)
-print("outside the function after calling",id(a))
+# Python **does not** strictly use *call by value* or *call by reference* as in C/C++.  
+# Instead, it uses **"Call by Object Reference"** (also known as **Call by Sharing**).
+
+# ---
+
+# ### 🔸 Call by Value (Immutable Types)
+
+# When passing **immutable objects** (like `int`, `float`, `str`, `tuple`),  
+# Python behaves *like* call by value — changes inside the function **don’t affect** the original variable.
+
+# ```python
+# def change_value(x):
+#     x = x + 5
+#     print("Inside function:", x)
+
+# a = 10
+# change_value(a)
+# print("Outside function:", a)
+# ```
+
+# 🧾 **Output:**
+# ```
+# Inside function: 15
+# Outside function: 10
+# ```
+
+# ✅ **Why?**
+# - `int` is **immutable**
+# - `x = x + 5` creates a new integer object, doesn’t modify `a`
+
+# ---
+
+# ### 🔸 Call by Reference (Mutable Types)
+
+# When passing **mutable objects** (like `list`, `dict`, `set`),  
+# Python behaves *like* call by reference — changes inside the function **affect** the original object.
+
+# ```python
+# def modify_list(x):
+#     x.append(100)
+#     print("Inside function:", x)
+
+# a = [1, 2, 3]
+# modify_list(a)
+# print("Outside function:", a)
+```
+
+# 🧾 **Output:**
+# ```
+# Inside function: [1, 2, 3, 100]
+# Outside function: [1, 2, 3, 100]
+
+# ✅ **Why?**
+# - `list` is **mutable**
+# - Both `x` and `a` point to the same object in memory.
+
+
+### 🔄 Python’s Actual Behavior
+
+# > Python uses **Call by Object Reference (Call by Sharing)**
+
+# 📘 The reference to the object is passed, not the object itself.  
+# Whether the original object changes depends on whether it is mutable.
+
+---
+
+# ### 🔹 Summary Table
+
+# | Data Type | Mutability | Behavior | Affects Original? | Example |
+# |------------|-------------|-----------|--------------------|----------|
+# | `int`, `str`, `tuple` | Immutable | Like Call by Value | ❌ No | `x = 10` |
+# | `list`, `dict`, `set` | Mutable | Like Call by Reference | ✅ Yes | `[1, 2, 3]` |
 
 '''Py# these are not in correct position
 thon does not support Call by value or Call by reference it support by call by object reference. When we pass immutable objects like int,float, tuple it acts like call by value (i.e., modify that object and create new object.) and when we pass mutable objects like list, dictionary it acts like call by reference (i.e., modify that object and will not create new object.).'''
