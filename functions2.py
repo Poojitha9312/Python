@@ -144,7 +144,7 @@ add(10,20)
 # a = [1, 2, 3]
 # modify_list(a)
 # print("Outside function:", a)
-```
+
 
 # 🧾 **Output:**
 # ```
@@ -278,7 +278,6 @@ variableargs(10)
 #Example:
 def variableargs(a):
 	print(a)
-	
 variableargs(10,20) # it gives an error because we declared one parameter but we passed two values.
 
 #Example:
@@ -408,7 +407,7 @@ sample()
 ****
 *****
 '''
-def fun(num):-
+def fun(num):
     print('*'*num)
     if num==5:
        return
@@ -444,7 +443,6 @@ fun(5)
 x=lambda a,b,c:a+b+c
 print(x
 (1,8,3))
-
 
 print((lambda a,b:a+b)(10,20)) #we can write in one line also
 

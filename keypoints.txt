@@ -1,0 +1,55 @@
+When do we use recursion in Python?
+We use recursion when a problem can be broken down into smaller versions of the same problem.
+
+Recursion is especially useful for:
+🔁 Repeating patterns
+🌳 Tree or hierarchical structures
+📂 File/folder traversal
+🧮 Mathematical problems (factorial, Fibonacci)
+🔍 Divide and conquer algorithms (like binary search)
+
+⚙️ Basic Idea of Recursion
+A recursive function:
+Calls itself
+Has a base case (a condition to stop)
+Without a base case → infinite loop ❌
+
+✅ Simple Example 1: Factorial
+Factorial of 5 = 5 × 4 × 3 × 2 × 1
+def factorial(n):
+    if n == 1:        # Base case
+        return 1
+    else:
+        return n * factorial(n - 1)   # Recursive call
+
+print(factorial(5))
+How it works:
+factorial(5)
+= 5 * factorial(4)
+= 5 * 4 * factorial(3)
+= 5 * 4 * 3 * factorial(2)
+= 5 * 4 * 3 * 2 * factorial(1)
+= 5 * 4 * 3 * 2 * 1
+= 120
+✅ Simple Example 2: Print Numbers from 1 to n
+def print_numbers(n):
+    if n == 0:      # Base case
+        return
+    print_numbers(n - 1)   # Recursive call
+    print(n)
+
+print_numbers(5)
+
+Output:
+
+1
+2
+3
+4
+5
+🧠 When NOT to Use Recursion
+
+Avoid recursion when:
+The problem is simple with loops
+It may cause maximum recursion depth error
+It uses too much memory
