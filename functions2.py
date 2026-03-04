@@ -441,8 +441,8 @@ fun(5)
 # The main function of lamda is for onetime use...
 #Example:
 x=lambda a,b,c:a+b+c
-print(x
-(1,8,3))
+print(x(1,8,3))
+
 
 print((lambda a,b:a+b)(10,20)) #we can write in one line also
 

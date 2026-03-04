@@ -1,4 +1,3 @@
-def sample():
-    print("hai welcome to python")
-    sample()
-sample()
+from itertools import accumulate
+result=list(accumulate([1,2,3,4,5],lambda a,b:a+b))
+print(result)
