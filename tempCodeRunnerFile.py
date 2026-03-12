@@ -1,3 +1,4 @@
-from itertools import accumulate
-result=list(accumulate([1,2,3,4,5],lambda a,b:a+b))
-print(result)
+sai=[1,2,3]
+print(sai)
+sai.remove(2)
+print(sai)
