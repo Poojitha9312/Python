@@ -1,158 +1,319 @@
-#------------INHERITANCE--------------
-#1. IS-A Relationship / Inheritance
-
-# Inheritance is a mechanism for creating a new class from an existing class.
-# Here the old class is called Base class and the new class is called Derived class.
-# if we will create a new class from an old class then we can easily access the members of a old class...
+# 🧩 Inheritance (IS-A Relationship) in Python
 
 
-#Example:
-'''
-class A -->Old class/ Base Class/ Parent Class
-  ..
-  ..
-  ..
-  ..
-  ..
-class B(A) -->New Class/ Derived Class/ Child Class/ Sub Class/ Extended Class.
-'''
+## 🔹 What is Inheritance?
 
-#Example:
-'''
-            Person
-            *    *
-     IS-A  *      * IS-A
-          *        *
-         *          *
-    Employee        Student
-    
-In the above 
-    Employee IS-A Person.
-    Student IS-A Person           
-'''
+# > **Inheritance** is a mechanism in Object-Oriented Programming that allows a new class (child) to acquire the properties and behavior of an existing class (parent).
 
-#Example:
-class A:
+# - The **existing class** is called the **Base / Parent / Super class**.
+# - The **new class** is called the **Derived / Child / Subclass**.
+
+
+
+### 🧠 Syntax:
+
+
+# class Parent:
+#     # base class properties and methods
+
+# class Child(Parent):
+#     # derived class properties and methods
+
+
+
+
+### ✅ Example:
+
+
+class A:  # Base / Parent class
     def method1(self):
         print("A class Method1")
+
     def method2(self):
-        print("A class method2")
-class B:
+        print("A class Method2")
+
+class B(A):  # Derived / Child class
     def method3(self):
-        print("B class method3")
+        print("B class Method3")
 
-b=B()
+b = B()
 b.method3()
-b.method1() #Here B object has no attribute 'method1'
+b.method1()
 
-# #Example:
-# class A:
-def m1(self):
-    x="ram"
-    print(x)
-def m2(self):
-        y="ruchi"
-        print(y)
-def m3(self):
-        z="kaveri"
-class B:
-    def sample(self):
-        a=20
-        b=10
-        print(a+b)
-b1=B()
-b1.sample()
-b1.m2()# here it doesn't work it will raise attribute error
 
-# #Example 2:
-class A:
-    def m1(self):
-        x="ram"
-        print(x)
-    def m2(self):
-        y="ruchi"
-        print(y)
-    def m3(self):
-        z="kaveri"
-class B(A):
-    def sample(self):
-        a=20
-        b=10
-        print(a+b)
-b1=B()
-b1.sample()
-b1.m2()
-b1.m1()#here it will works because we apply inheritance...
-# # B is the child class to parent class A.....
+# 🧾 **Output:**
+# ```
+# B class Method3
+# A class Method1
+
+
+# ✅ Here,  
+# - Class `B` inherits from class `A`.  
+# - So `B` can access both **its own methods** and **parent methods**.
 
 
 
-# Example 3:
+### 🧩 Real-World Example: IS-A Relationship
+
+
+#             Person
+#             *    *
+#      IS-A  *      * IS-A
+#           *        *
+#          *          *
+#     Employee        Student
+# ```
+
+# 🧠 Interpretation:
+# - `Employee IS-A Person`
+# - `Student IS-A Person`
+
+# This type of relationship represents **inheritance**.
+
+
+
+## 🧠 Example: Inheriting Instance Variables
+
 class A:
     def __init__(self):
-        self.x=10
-        self.y=20
+        self.x = 10
+        self.y = 20
         
 class B(A):
     def Details(self):
         print(f'x is {self.x}')
         print(f'y is {self.y}')
-b=B()
+
+b = B()
 b.Details()
 
+# 🧾 **Output:**
 
 # x is 10
 # y is 20
 
-#Example: Without Inheritance
+
+# ✅ The `B` class inherits both instance variables `x` and `y` from class `A`.
+
+
+
+### ❌ Without Inheritance (Code Duplication)
+
+
 class A:
     def __init__(self):
-        self.x=10
-        self.y=20
-        
+        self.x = 10
+        self.y = 20
+
 class B:
-    def __init__(self):  #Here without Inheritance code usabilty is repeated
-        self.x=10
-        self.y=20
+    def __init__(self):  # Repeated code
+        self.x = 10
+        self.y = 20
     def Details(self):
         print(f'x is {self.x}')
         print(f'y is {self.y}')
-        
-b=B()
+
+b = B()
 b.Details()
 
-'''
-x is 10
-y is 20
-'''
 
-#Adv and Disadv of Inheritance
-
-# Adv:
-# 1. Code reusability.
-# 2. Reduce the code.
-# 3. Code extensibility(By overriding the base class functionality).
-
-# DisAdv:
-# 1. Base and derived class both are tightly coupled(If we made any changes on parent class it will directly reflect on child class).
-
-#Example about Disadvantage: If we change the value in parent class it will reflect in child class that's way Inheritance concept is tightly coupled.
+# 🧾 **Output:**
+# ```
+# x is 10
+# y is 20
 
 
-#Example 1:
+# 🚫 **Problem:** Code duplication — If you modify logic in one class, you need to repeat changes elsewhere.  
+# ✅ **Solution:** Use **Inheritance** for **code reusability**.
+
+
+
+## ✅ Advantages and Disadvantages of Inheritance
+
+### 🟢 Advantages:
+# 1. **Code reusability** — eliminates redundant code.  
+# 2. **Reduces code size** — simplifies maintenance.  
+# 3. **Extensibility** — easily add new functionality (override methods).
+
+### 🔴 Disadvantages:
+# 1. **Tight coupling** — if the parent class changes, it directly affects all child classes.  
+# 2. **Increased complexity** in deep inheritance hierarchies.
+
+
+
+### ⚠️ Example: Tight Coupling in Inheritance
+
+
 class A:
     def m1(self):
-        self.x=10
-        print(f"Value or x is {self.x}")
+        self.x = 10  # if changed, affects all child classes
+        print(f"Value of x is {self.x}")
+
+class B(A):
+    pass
+
+b = B()
+b.m1()
+
+
+# 🧾 **Output:**
+# ```
+# Value of x is 10
+
+
+# If you modify `x` in parent class `A`, it automatically reflects in `B` —  
+# proving inheritance creates **tight coupling**.
+
+
+
+### ⚙️ Example: Changes in Child Do Not Affect Parent
+class A:
+    def m1(self):
+        self.x = 10
+        print(f"Value of x is {self.x}")
 
 class B(A):
     def m2(self):
-        self.x=20
-        
+        self.x = 20  # local to B
 
-b=B()
+b = B()
 b.m1()
 
+
+# 🧾 **Output:**
+# ```
+# Value of x is 10
+
+
+# ✅ Child modifications don’t affect parent — the inheritance direction is **one-way**.
+
+
+
+## 🧩 1️⃣ Single Inheritance
+
+### 📘 Definition:
+# In **Single Inheritance**, one **child class** inherits from one **parent class**.
+
+
+# Parent → Child
+
+
+# 🧠 **Syntax:**
+
+class Parent:
+    pass
+
+class Child(Parent):
+    pass
+
+
+### ✅ Example 1 — Simple Single Inheritance
+class A:
+    def method1(self):
+        self.x = 10
+        self.y = 20
+        print(f"value of x is {self.x}")
+    def method2(self):
+        self.z = 30
+        print(f"value of z is {self.z}")
+
+class B(A):
+    pass        
+
+b = B()
+b.method1()
+b.method2()
+
+
+# 🧾 **Output:**
+# ```
+# value of x is 10
+# value of z is 30
+
+
+
+### ✅ Example 2 — Parent vs Child Access
+class A:
+    def method1(self):
+        print("A class Method1")
+    def method2(self):
+        print("A class Method2")
+
+class B(A):
+    def method3(self):
+        print("B class Method3")
+
+a = A()
+a.method1()
+a.method2()
+
+b = B()
+b.method3()
+b.method1()
+b.method2()
+
+# 🧾 **Output:**
+# A class Method1
+# A class Method2
+# B class Method3
+# A class Method1
+# A class Method2
+
+
+# ✅ The **child class** can access both parent and its own methods.  
+# ❌ The **parent class** can access only its own methods.
+
+
+
+### ✅ Example 3 — Inheriting All Types of Members
+class A:
+    a = 10
+    print(f"value of a is {a}")
+    
+    def __init__(self):
+        self.b = 15
+        print(f"value of b is {self.b}")
+    
+    def method1(self):
+        y = 20
+        self.x = 30
+        print(f"value of x is {self.x}")
+        print(f"value of y is {y}")
         
+    @classmethod
+    def cm(cls):
+        cls.cmv = 40
+        print(f"value of cmv is {cls.cmv}")
         
-   
+    @staticmethod
+    def sm():
+        smv = 50
+        print(f"value of smv is {smv}")
+
+class B(A):
+    pass        
+
+b = B()
+b.method1()
+b.cm()
+
+
+# 🧾 **Output:**
+# value of a is 10
+# value of b is 15
+# value of x is 30
+# value of y is 20
+# value of cmv is 40
+# value of smv is 50
+
+
+# ✅ The **child class (`B`)** can access:
+# - Instance variables  
+# - Class variables  
+# - Static methods  
+# - Class methods  
+# - Instance methods  
+# - Constructors of the **parent class (`A`)**
+
+
+# ✨ *“Inheritance promotes reusability — you write once, and use everywhere.”* 🧬🐍

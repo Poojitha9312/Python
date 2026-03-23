@@ -108,7 +108,7 @@ class Staff:
         print(f'Age is: {x}')
 
 s1 = Student("Ram", 30)
-Staff.modify_age(s1.age)  # works like static method, but passes class as first arg
+Staff.modify_age( )  # works like static method, but passes class as first arg
 
 ###Passing one class members to another class  using static method
 class Student:

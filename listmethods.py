@@ -252,7 +252,7 @@ print(v)
 
 # 14. Repetition of list:
 # It will  repeat list  by specified number of times
-# * is uesed for repetition of list
+# * is used for repetition of list
 l=[10,20,30]
 v=l*3
 print(v)
@@ -382,3 +382,9 @@ print(l)
 # by using comprehension we can write in single line:
 l=[i for i in range(11)]
 print(l)
+
+
+s="10"
+y=int(s)
+print(y)
+print(type(y))

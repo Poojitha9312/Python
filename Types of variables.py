@@ -8,6 +8,7 @@
 # 2. **Static (Class) Variables**
 # 3. **Local Variables**
 
+
 # Each type has its own scope, lifetime, and purpose.
 
 
@@ -32,7 +33,6 @@
 
 
 ### ✅ Example — Creation of Instance Variables
-
 
 class Sample:
     def __init__(self, name):
@@ -228,6 +228,7 @@ class Sample:
 
 s = Sample()
 Sample.a = 60
+
 s.m1()
 s.m2()
 s.m3()

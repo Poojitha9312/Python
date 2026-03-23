@@ -14,7 +14,7 @@ class Outer:
         def __init__(self):
             print("Inner class")
 # #outer class object creation
-# o=Outer()
+o=Outer()
 
 # #inner class object creation in different ways
 # i=o.Inner()
