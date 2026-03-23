@@ -140,11 +140,11 @@ c.skills()
 
 ### 🧩 Diagram:
 
-           class A
-          /       \
-     class B        class C
-          \         /
-           \       /
+    #        class A
+    #       /       \
+    #  class B        class C
+    #       \         /
+    #        \       /
 
 
 # Here:
