@@ -181,9 +181,7 @@ b.m1()
 
 
 # 🧾 **Output:**
-# ```
 # Value of x is 10
-
 
 # ✅ Child modifications don’t affect parent — the inheritance direction is **one-way**.
 
