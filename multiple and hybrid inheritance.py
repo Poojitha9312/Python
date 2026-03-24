@@ -162,6 +162,7 @@ class A:
         print("A class method1")
 
 class B(A):
+    
     def method2(self):
         print("B class method2")
 
@@ -210,7 +211,7 @@ print(D.mro())
 # > The `super()` function in Python is used to **call the parent class’s method or constructor**.
 
 
-### ✅ Example — Using `super()` in Multiple Inheritance
+### ✅ Example — Using `super()` in Multilevel Inheritance
 
 class A:
     def __init__(self):

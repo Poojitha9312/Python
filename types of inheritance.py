@@ -84,8 +84,6 @@ c.method3()
 # - So class `C` indirectly inherits from class `A` too.
 
 ### 🧠 Real-World Example:
-
-
 # Person → Employee → Manager
 # - **Person:** Base class with basic attributes (name, age).  
 # - **Employee:** Inherits from Person and adds company info.  
