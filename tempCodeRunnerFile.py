@@ -1,12 +1,9 @@
-class A:
-    def m1(self):
-        self.x=10
-        print(f"Value or x is {self.x}")
-
-class B(A):
-    def m2(self):
-        self.x=20
-        
-
-b=B()
-b.m1()
+class parent:
+    def sample(self):
+        print("I like fruits")
+    
+class child(parent):
+    def sample(self):
+        print("I like Ice cream and pizza")# Method overriding
+c1=child()
+c1.sample()
