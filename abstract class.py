@@ -27,7 +27,7 @@
 --->If we don't know the body part of a method then at that particular time we can define abstract method.
 --->By using @abstractmethod decorator we can abstract method.
 --->Child class will provide the body part of abstract method.
---->We can create the object of a abstract class. 
+--->We cannot  create the object of a abstract class. 
 --->If a method have body part then that method is called as concreate method.'''
 
 #Example of Using abc Module and ABC Class:
