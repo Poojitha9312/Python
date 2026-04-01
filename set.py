@@ -238,11 +238,10 @@ fs.add(26)
 fs.remove(52)
 
 # merging set elements:
-s1={10,20,30}
-s2={10,20}
-s3=s1+s2
+s1 = {10, 20, 30, 40}
+s2 = {50, "Rama"}
+s3 = {*s1, *s2}
 print(s3)
-
 
 
 
@@ -257,3 +256,7 @@ i=0
 while i<len(s1):
     print(s1[i])
     i=i+1
+    
+    
+    
+    

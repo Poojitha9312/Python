@@ -1,9 +1,4 @@
-class employee:
-    def __init__(self,name,age):
-        self.__name=name
-        self.age=age
-    def sample(self):
-        print(f"My name is {self.__name}  and my age is {self.age}")
-        
-e1=employee("ram",30)
-e1.sample()
+s1 = {10, 20, 30, 40}
+s2 = {50, "Rama"}
+s3 = {*s1, *s2}
+print(s3)
