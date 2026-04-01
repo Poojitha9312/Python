@@ -1,7 +1,6 @@
 # ⚙️ Python Multithreading
 
 ## 🧩 Process
-
 # **Definition:**  
 # A process is a program in execution. When we start any application, the operating system creates a process.
 
