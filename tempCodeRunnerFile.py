@@ -1,3 +1,3 @@
-d={"name":"snehitha","age":14,"school_name":"hamsavahini"}
-print(d)
-print(d["name"])
+from sample import add,sub
+add(10,20)
+sub(20,10)

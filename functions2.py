@@ -163,7 +163,6 @@ add(10,20)
 # 📘 The reference to the object is passed, not the object itself.  
 # Whether the original object changes depends on whether it is mutable.
 
----
 
 # ### 🔹 Summary Table
 
